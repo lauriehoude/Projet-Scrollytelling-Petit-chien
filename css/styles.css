@@ -1,54 +1,63 @@
-
 @font-face {
     src: url("fonts/Acme-Regular.ttf") format("ttf");
     font-family: "acme";
-  }
-  :root{
-
- --fond: rgb(96, 148, 193);
- --bouton: 	rgb(144, 152, 150);
- --vertpale:rgb(145, 193, 123);
- --vertfonce:	rgb(29, 88, 1);
- --beige:rgb(245, 200, 127);
- --brun:rgb(88, 48, 18);
- --black:rgb(0, 0, 0);
- --white:rgb(255, 255, 255);
 }
-*{margin: 0;}
-body{
-    font-family: 'Quicksand', sans-serif; 
+
+ :root {
+    --fond: rgb(96, 148, 193);
+    --bouton: rgb(144, 152, 150);
+    --vertpale: rgb(145, 193, 123);
+    --vertfonce: rgb(29, 88, 1);
+    --beige: rgb(245, 200, 127);
+    --brun: rgb(88, 48, 18);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
     height: 100vh;
 }
-img{
-background-image: cover;
+
+img {
+    background-image: cover;
 }
-header{
-height: 100vh;
-width: 100vw;
-background-repeat: no-repeat;
-background-image: url("/img/img_arriere_plan/fond_arc.jpg");
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-image: url("/img/img_arriere_plan/fond_arc.jpg");
 }
-h1{
-position: absolute;
-left: 50%;
-top: 0px;
-color:var(--vertpale);
-font-size: 5vh;
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    color: var(--vertpale);
+    font-size: 5vh;
 }
-p{
-font-size: 12px;
-position: relative;
-left: 25%;
-top: 800px;
+
+p {
+    font-size: 12px;
+    position: relative;
+    left: 25%;
+    top: 800px;
 }
-section{
+
+section {
     height: 100vh;
     width: 100vw;
 }
-.sprite{
+
+.sprite {
     background-image: url("../img/sprite.png");
-   /* width: 50vw;
+    /* width: 50vw;
     height: 50vh;
     aspect-ratio: 1/1;
     */
@@ -59,49 +68,89 @@ section{
     animation-iteration-count: infinite;
     animation-timing-function: steps(56);
     margin: 0 auto;
-  
-  
 }
-.is-scrolling{
+
+.is-scrolling {
     animation-play-state: paused;
 }
+
+
 /*
 .sprite:hover{
     animation-play-state: running;
 }*/
+
 @keyframes bulle {
-    from { background-position: 0 0; }
-    to { background-position: -62832px 0;} 
-   
-  }
-#chapitre1{
- 
-position: absolute;
-background-image: url("../img/img_arriere_plan/fond.png");
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -62832px 0;
+    }
 }
 
-.fleche{
-width: 50px;
-height: 50px;
-position: absolute;
-right:30px;
-top: 580px;
-
+#chapitre1 {
+    position: absolute;
+    background-image: url("../img/img_arriere_plan/fond.png");
+    height: 500px;
 }
-#troue{
+
+.gazon {
+    position: absolute;
+}
+
+.nuage {
+    position: absolute;
+}
+
+.terre {
+    position: absolute;
+}
+
+.tombeau {
+    position: absolute;
+}
+
+.personnage_fatigue {
+    position: absolute;
+    right: -280px;
+}
+
+.fleche {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 30px;
+    top: 580px;
+}
+
+#troue {
+    background-image: url("../img/img_arriere_plan/fond.png");
+    position: absolute;
+    height: 500px;
+    ;
+}
+
+.terre-trou {
+    position: absolute;
+}
+
+.chien {
+    position: absolute;
+}
+
+#grotte {
+    background-image: url("../img/img_arriere_plan/fond_noir.png");
+}
+
+#grotte-nage {
+    background-image: url("../img/img_arriere_plan/eau.png");
+}
+
+#marche-montagne {
     background-image: url("../img/img_arriere_plan/fond.png");
 }
-#grotte{
-    background-image: url("../img/img_arriere_plan/fond_noir.png");   
-}
-#grotte-nage{
-    background-image: url("../img/img_arriere_plan/eau.png");
-    background-repeat: no-repeat; 
-    width: 2000px;  
-}
-#marche-montagne{
-    background-image: url("../img/img_arriere_plan/fond.png");     
-}
-#paradis{
-    background-image: url("../img/img_arriere_plan/fond.png");    
+
+#paradis {
+    background-image: url("../img/img_arriere_plan/fond.png");
 }
