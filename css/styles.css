@@ -122,10 +122,9 @@ main{
     position: absolute;
 }
 
-.personnage_fatigue {
+.personnage-fatigue{
     position: absolute;
-    left: 0px;
-    
+    left: 140px;
     bottom: 0;
 }
 
