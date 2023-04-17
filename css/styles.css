@@ -115,18 +115,24 @@ main{
     position: absolute;
     z-index: 2;
     right: 0;
+    width: 100vw;
+ 
 }
 
 
 
 .tombeau {
     position: absolute;
+    width: 100vw;
+    top:50%;
+    transform: translateY(-25%);
 }
 
 .personnage-fatigue{
     position: absolute;
     left: 140px;
     bottom: 0;
+    width: 10vw;
 }
 
 .fleche {
@@ -158,6 +164,7 @@ main{
 
 .chien {
     position: absolute;
+    width: 100vw;
 }
 
 #grotte {
@@ -198,6 +205,7 @@ main{
 .chien-nage{
     position: absolute;
     bottom: 180px;
+    width: 100vw;
 }
 .is-scrolling .bubule,.is-scrolling .petit-bonhomme {
     animation-play-state:running;
@@ -232,26 +240,32 @@ main{
   
  
 }
-.roche{
+.roche01{
     position: absolute;
-    bottom: 0 ;
-    width: 2000px ;
-    z-index: 1  ;
-    height: 2000px;
-    
-   
+    right: 0;
+    transform: translateY(-25%);
+    width: 100vw;
+    top: 50%;
 }
+
 
 #paradis {
     background-image: url("/img/img_arriere_plan/chapitre_04.png");
     position: relative;
     height: 100%;
     width: 100%;
-    aspect-ratio: 16/9;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
     display: block;
-   
+  
+}
+.montagne{
+    position: absolute;
+    bottom: 0;
+    width: 100vw ;
+    z-index: 1  ;
+    transform: translateY(0%);
+ 
 }
