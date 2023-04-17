@@ -171,6 +171,9 @@ main{
  
    
 }
+.personnage{
+    position: absolute;
+}
 
 .grotte1{
     position: absolute;
