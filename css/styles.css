@@ -17,10 +17,13 @@
 * {
     margin: 0;
 }
+html{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Quicksand', sans-serif;
-    overflow-x: hidden;
     height: 100vh;
 }
 
@@ -29,10 +32,10 @@ img {
 }
 
 header {
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
     background-image: url("/img/img_arriere_plan/fond_arc.jpg");
+    aspect-ratio: 3/2;
 }
 
 h1 {
@@ -88,11 +91,21 @@ section {
         background-position: -62832px 0;
     }
 }
-
+main{
+    width: 100%;
+    height: 100%;
+}
 #chapitre1 {
-    position: absolute;
+    position: relative;
     background-image: url("../img/img_arriere_plan/fond.png");
-    height: 500px;
+    height:100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+   
 }
 
 .gazon {
@@ -113,7 +126,7 @@ section {
 
 .personnage_fatigue {
     position: absolute;
-    right: -280px;
+    left: 0px;
 }
 
 .fleche {
@@ -126,13 +139,22 @@ section {
 
 #troue {
     background-image: url("../img/img_arriere_plan/fond.png");
-    position: absolute;
-    height: 500px;
-    ;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: block;
+   
 }
 
 .terre-trou {
     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .chien {
@@ -140,17 +162,57 @@ section {
 }
 
 #grotte {
-    background-image: url("../img/img_arriere_plan/fond_noir.png");
+    background-image: url("/img/img_arriere_plan/fond_noir.png");
+    position: relative;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: block;
+   
 }
 
 #grotte-nage {
-    background-image: url("../img/img_arriere_plan/eau.png");
+    background-image: url("/img/img_arriere_plan/eau.png");
+    position: relative;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: block;
+   
 }
 
 #marche-montagne {
     background-image: url("../img/img_arriere_plan/fond.png");
+    position: relative;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: block;
+ 
 }
 
 #paradis {
     background-image: url("../img/img_arriere_plan/fond.png");
+    position: relative;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: block;
+   
 }
