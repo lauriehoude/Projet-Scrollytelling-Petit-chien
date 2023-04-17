@@ -8,10 +8,21 @@ animchientombe= gsap
   .to((chien_tombe, {x:"50%", ease: "none", duration:2,yoyo:true,}))
 
 */
-var tl = gsap.timeline();
-tl.to(".personnage-fatigue", {y: `-30vh`,x:`20vh`, duration: 3});
-tl.to(".personnage-fatigue", {x:`100vw`, duration: 4});
-tl.to(".tombeau",{opacity:"0%", duration: 2},">");
+let chapitre1 = gsap.timeline();
+chapitre1.to(".personnage-fatigue", {y: `-30vh`,x:`20vh`, duration: 3});
+chapitre1.to(".personnage-fatigue", {x:`100vw`, duration: 4});
+chapitre1.to(".tombeau",{opacity:"0%", duration: 2},">");
+
+let chapitre2 = gsap.timeline();
+chapitre2.to(".chien-courone",{y:"90vh", duration:2} );
+chapitre2.to(".courone",{x:"30vh", duration:3, rotate:"360"},"<")
+
+let chapitre3 = gsap.timeline();
+chapitre3.to(".personnage",{x:"20vh", duration:2, opacity:0, scale:1},)
+chapitre3.to(".personnage", {x:"100vh",opacity:100, duration:1,scale:2})
+
+
+
 
 
 let myMinuteur;
