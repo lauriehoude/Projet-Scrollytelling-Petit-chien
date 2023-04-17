@@ -74,7 +74,7 @@ section {
     animation-play-state: paused;
 }
 .body-sprite{
-    width: 100vw;
+    width: 300vw;
     height: 200vh;
 }
 
@@ -100,7 +100,7 @@ main{
 }
 #chapitre1 {
     position: relative;
-    background-image: url("../img/img_arriere_plan/fond.png");
+    background-image: url("../img/img_arriere_plan/chapitre_01.png");
     height:100%;
     width: 100%;
     aspect-ratio: 16/9;
@@ -161,7 +161,6 @@ main{
 #grotte {
     background-image: url("/img/img_arriere_plan/chapitre_03.png");
     position: relative;
-
     width: 100%;
     aspect-ratio: 16/9;
     background-size: cover;
@@ -173,6 +172,10 @@ main{
 }
 .personnage{
     position: absolute;
+    width: 35%;
+    left: 5%;
+    bottom: 25%;
+    z-index: 1;
 }
 
 .grotte1{
@@ -183,11 +186,10 @@ main{
     position: relative;
     height: 100%;
     width: 100%;
-    aspect-ratio: 16/9;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
     display: block;
    
 }
@@ -211,7 +213,7 @@ main{
 }
 
 #marche-montagne {
-    background-image: url("../img/img_arriere_plan/fond.png");
+    background-image: url("/img/img_arriere_plan/fond.png");
     position: relative;
     height: 100%;
     width: 100%;
