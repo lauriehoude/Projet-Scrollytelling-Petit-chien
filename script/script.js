@@ -15,11 +15,15 @@ chapitre1.to(".tombeau",{opacity:"0%", duration: 2},">");
 
 let chapitre2 = gsap.timeline();
 chapitre2.to(".chien-courone",{y:"90vh", duration:2} );
-chapitre2.to(".courone",{x:"30vh", duration:3, rotate:"360"},"<")
+chapitre2.to(".courone",{x:"30vw", duration:3, rotate:"360"},"<")
 
 let chapitre3 = gsap.timeline();
-chapitre3.to(".personnage",{x:"20vh", duration:2, opacity:0, scale:1},)
-chapitre3.to(".personnage", {x:"100vh",opacity:100, duration:1,scale:2})
+chapitre3.to(".personnage",{x:"20vw", duration:2, opacity:0, scale:1},)
+chapitre3.to(".personnage", {x:"100vw",opacity:100, duration:1,scale:2})
+
+let chapitre6 = gsap. fromTo(".nuage",{x:"20vw", duration:2});
+chapitre6.to(".nuage",{x:"40vw", duration:3, rotate:"360"})
+
 
 
 
