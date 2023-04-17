@@ -28,8 +28,8 @@ body {
 }
 
 img {
-    background-image: cover;
-}
+
+background-image: cover;}
 
 header {
     height: 100%;
@@ -103,25 +103,20 @@ main{
     background-image: url("../img/img_arriere_plan/fond.png");
     height:100%;
     width: 100%;
-    aspect-ratio: 16/9;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-   
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: block;
 }
 
-.gazon {
-    position: absolute;
-}
 
 .nuage {
     position: absolute;
+    width: 100%;
 }
 
-.terre {
-    position: absolute;
-}
+
 
 .tombeau {
     position: absolute;
@@ -141,17 +136,16 @@ main{
 }
 
 #troue {
-    background-image: url("../img/img_arriere_plan/fond.png");
+    background-image: url("../img/img_arriere_plan/chapitre_02.png");
     position: relative;
     height: 100%;
     width: 100%;
-    aspect-ratio: 16/9;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
     display: block;
-   
+ 
 }
 
 .terre-trou {
@@ -165,7 +159,7 @@ main{
 }
 
 #grotte {
-    background-image: url("/img/img_arriere_plan/fond_noir.png");
+    background-image: url("/img/img_arriere_plan/chapitre_03.png");
     position: relative;
    
     width: 100%;
