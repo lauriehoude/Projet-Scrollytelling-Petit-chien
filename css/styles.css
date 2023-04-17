@@ -161,15 +161,19 @@ main{
 #grotte {
     background-image: url("/img/img_arriere_plan/chapitre_03.png");
     position: relative;
-   
+
     width: 100%;
-    aspect-ratio: 16/9;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
     display: block;
+ 
    
+}
+.riviere {
+    position: absolute;
+    left: ;
 }
 .grotte1{
     position: absolute;
