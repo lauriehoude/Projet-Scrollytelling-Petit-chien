@@ -1,6 +1,10 @@
 let fleche = gsap
     .to(".fleche", { x: "0vmin", y: "6vmin", ease: "none", repeat: -1 });
 
+let header = gsap.timeline();
+header.to(".lucky", { opacity: 1, duration: 1 })
+header.to(".lucky", { opacity: 0.5, duration: 1, delay: 1, ease: true })
+
 let chapitre1 = gsap.timeline();
 chapitre1.to(".personnage-fatigue", { y: `-30vh`, x: `20vh`, duration: 3 });
 chapitre1.to(".personnage-fatigue", { x: `100vw`, duration: 4 });
@@ -36,12 +40,19 @@ chapitre6.to(".chien-paradis", { y: "-20vh", duration: 2, ease: true, opacity: 0
 
 
 
-
-let myMinuteur;
 let anim = gsap
     .to(".fleche", { x: "0vmin", y: "6vmin", ease: "none", repeat: -1 });
 
 
+
+
+
+
+
+
+
+
+let myMinuteur;
 
 
 let sprite = document.querySelector(".sprite")
