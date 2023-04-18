@@ -18,8 +18,19 @@ let chapitre4 = gsap.timeline();
 chapitre4.to(".chien-nage", { x: "10vw", duration: 2, scale: 1, delay: 8 }, )
 chapitre4.to(".chien-nage", { x: "100vw", duration: 1, scale: 2, })
 
-let chapitre6 = gsap.fromTo(".nuage", { x: "20vw", duration: 2 });
-chapitre6.to(".nuage", { x: "40vw", duration: 3, rotate: "360" })
+let chapitre6 = gsap.timeline()
+chapitre6.to(".nuage", { x: "0vw", duration: 2, ease: true });
+chapitre6.to(".nuage", { x: "3vw", duration: 3, })
+chapitre6.to(".chien-paradis", { y: "10vh", duration: 1, ease: true, rotate: "-5" })
+chapitre6.to(".chien-paradis", { x: "10vh", duration: 2, ease: true, rotate: "10" })
+chapitre6.to(".chien-paradis", { y: "15vh", duration: 2, ease: true, rotate: "-12" })
+chapitre6.to(".chien-paradis", { x: "30vw", duration: 1, ease: true })
+chapitre6.to(".chien-paradis", { y: "-15vh", duration: 2, ease: true, opacity: 100 })
+chapitre6.to(".chien-paradis", { y: "-20vh", duration: 2, ease: true, opacity: 0 })
+
+
+
+
 
 
 
