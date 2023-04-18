@@ -2,8 +2,10 @@ let fleche = gsap
     .to(".fleche", { x: "0vmin", y: "6vmin", ease: "none", repeat: -1 });
 
 let header = gsap.timeline();
-header.to(".lucky", { opacity: 1, duration: 1 })
-header.to(".lucky", { opacity: 0.5, duration: 1, delay: 1, ease: true })
+header.to(".lucky", { x: "10vh", duration: 1 })
+header.to(".cerceau", { x: "20vh", duration: 1, }, "<")
+header.to(".cerceau", { y: "-10vh", duration: 1, ease: true, rotate: "360", skewX: "0deg" })
+header.to(".cerceau", { skewX: "3deg", duration: 1, }, "<")
 
 let chapitre1 = gsap.timeline();
 chapitre1.to(".personnage-fatigue", { y: `-30vh`, x: `20vh`, duration: 3 });
@@ -31,20 +33,6 @@ chapitre6.to(".chien-paradis", { y: "15vh", duration: 2, ease: true, rotate: "-1
 chapitre6.to(".chien-paradis", { x: "30vw", duration: 1, ease: true })
 chapitre6.to(".chien-paradis", { y: "-15vh", duration: 2, ease: true, opacity: 100 })
 chapitre6.to(".chien-paradis", { y: "-20vh", duration: 2, ease: true, opacity: 0 })
-
-
-
-
-
-
-
-
-
-let anim = gsap
-    .to(".fleche", { x: "0vmin", y: "6vmin", ease: "none", repeat: -1 });
-
-
-
 
 
 

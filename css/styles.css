@@ -226,6 +226,7 @@
                                     #chapitre3 {
                                         background-image: url("/img/img_arriere_plan/chapitre_03.png");
                                         position: relative;
+                                        height: 100%;
                                         width: 100%;
                                         aspect-ratio: 16/9;
                                         background-size: cover;
@@ -258,7 +259,6 @@
                                         width: 30vw;
                                         max-height: 5vh;
                                         display: block;
-                                        object-position: 50% 50%;
                                     }
                                     
                                     #chapitre4 {
@@ -271,11 +271,12 @@
                                         background-repeat: no-repeat;
                                         box-sizing: border-box;
                                         display: block;
+                                        object-fit: cover;
                                     }
                                     
                                     .chien-nage {
                                         position: absolute;
-                                        bottom: 180px;
+                                        bottom: 10vh;
                                         width: 80vw;
                                     }
                                     
@@ -341,6 +342,7 @@
                                         background-repeat: no-repeat;
                                         box-sizing: border-box;
                                         display: block;
+                                        object-fit: cover;
                                     }
                                     
                                     .roche01 {
@@ -361,6 +363,7 @@
                                         background-repeat: no-repeat;
                                         box-sizing: border-box;
                                         display: block;
+                                        object-fit: cover;
                                     }
                                     
                                     .chien-paradis {
