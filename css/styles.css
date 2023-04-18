@@ -48,6 +48,27 @@ h1 {
     font-size: 5vh;
 }
 
+.lucky-fleche {
+    position: relative;
+    width: 50vw;
+    height: 55vh;
+    margin: 0 auto;
+}
+
+.fleche {
+    width: 25%;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+.lucky {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
 .text-header {
     font-size: 12px;
     position: absolute;
@@ -135,14 +156,6 @@ main {
     left: 30px;
     max-height: 10vh;
     display: inline-block;
-}
-
-.fleche {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 30px;
-    top: 580px;
 }
 
 #chapitre2 {
@@ -311,7 +324,6 @@ main {
 }
 
 .roche01 {
-    position: absolute;
     right: 0;
     transform: translateY(-25%);
     width: 100vw;
