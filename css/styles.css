@@ -330,6 +330,12 @@ main {
     display: block;
 }
 
+.chien-paradis {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
 .montagne {
     position: absolute;
     bottom: 0;

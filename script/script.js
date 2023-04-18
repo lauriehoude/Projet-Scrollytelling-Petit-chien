@@ -29,6 +29,10 @@ chapitre6.to(".nuage", { x: "40vw", duration: 3, rotate: "360" })
 let myMinuteur;
 let anim = gsap
     .to(".fleche", { x: "0vmin", y: "6vmin", ease: "none", repeat: -1 });
+
+
+
+
 let sprite = document.querySelector(".sprite")
 let body = document.querySelector("body")
 
