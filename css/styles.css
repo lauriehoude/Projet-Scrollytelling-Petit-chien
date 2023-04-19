@@ -313,12 +313,12 @@
                                     .petit-bonhomme {
                                         background-image: url("../img/chien_sprite.png");
                                         width: 50vw;
-                                        aspect-ratio: 561/316;
+                                        aspect-ratio:  187 / 6320; ;
                                         animation-name: marche;
-                                        background-size: 5600% 100%;
+                                        background-size: 3300% 100%;
                                         animation-duration: 1s;
                                         animation-iteration-count: infinite;
-                                        animation-timing-function: steps(56);
+                                        animation-timing-function: steps(33);
                                         margin: 0 auto;
                                         animation-play-state: paused;
                                     }
@@ -328,7 +328,7 @@
                                             background-position: 0 0;
                                         }
                                         to {
-                                            background-position: 0 -5600%;
+                                            background-position: 0 -3300%;
                                         }
                                     }
                                     
