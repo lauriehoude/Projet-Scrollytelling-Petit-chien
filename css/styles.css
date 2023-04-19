@@ -368,7 +368,7 @@
                                     
                                     .chien-paradis {
                                         position: absolute;
-                                        top: 50px;
+                                        bottom: -40vh;
                                         width: 100vw;
                                     }
                                     
@@ -377,5 +377,5 @@
                                         bottom: 0;
                                         width: 100vw;
                                         z-index: 1;
-                                        transform: translateY(0%);
+                                        height: 90vh;
                                     }

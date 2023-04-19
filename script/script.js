@@ -4,13 +4,13 @@ let fleche = gsap
 let header = gsap.timeline();
 header.to(".lucky", { x: "10vh", duration: 1 })
 header.to(".cerceau", { x: "20vh", duration: 1, }, "<")
-header.to(".cerceau", { y: "-10vh", duration: 1, ease: true, rotate: "360", skewX: "0deg" })
-header.to(".cerceau", { skewX: "3deg", duration: 1, }, "<")
+header.to(".cerceau", { y: "-10vh", duration: 1, ease: true, rotate: "360" })
+header.to(".cerceau", { scaleY: 3, duration: 2, rotate: "360", y: "-40vh" }, "<")
 
 let chapitre1 = gsap.timeline();
 chapitre1.to(".personnage-fatigue", { y: `-30vh`, x: `20vh`, duration: 3 });
 chapitre1.to(".personnage-fatigue", { x: `100vw`, duration: 4 });
-chapitre1.to(".tombeau", { opacity: "0%", duration: 2 }, ">");
+chapitre1.to(".tombeau", { opacity: "0%", ease: true, duration: 2 }, ">");
 
 let chapitre2 = gsap.timeline();
 chapitre2.to(".chien-courone", { y: "90vh", duration: 2, delay: 3 });
@@ -26,13 +26,14 @@ chapitre4.to(".chien-nage", { x: "100vw", duration: 1, scale: 2, })
 
 let chapitre6 = gsap.timeline()
 chapitre6.to(".nuage", { x: "0vw", duration: 2, ease: true });
-chapitre6.to(".nuage", { x: "3vw", duration: 3, })
-chapitre6.to(".chien-paradis", { y: "10vh", duration: 1, ease: true, rotate: "-5" })
+chapitre6.to(".nuage", { x: "3vw", duration: 3, }, "<")
+chapitre6.to(".nuage", { x: "0vw", duration: 3, }, "<")
+chapitre6.to(".chien-paradis", { y: "-10vh", duration: 1, ease: true, rotate: "-5" }, "<")
 chapitre6.to(".chien-paradis", { x: "10vh", duration: 2, ease: true, rotate: "10" })
-chapitre6.to(".chien-paradis", { y: "15vh", duration: 2, ease: true, rotate: "-12" })
+chapitre6.to(".chien-paradis", { y: "-15vh", duration: 2, ease: true, rotate: "-12" })
 chapitre6.to(".chien-paradis", { x: "30vw", duration: 1, ease: true })
 chapitre6.to(".chien-paradis", { y: "-15vh", duration: 2, ease: true, opacity: 100 })
-chapitre6.to(".chien-paradis", { y: "-20vh", duration: 2, ease: true, opacity: 0 })
+chapitre6.to(".chien-paradis", { y: "-40vh", duration: 2, ease: true, opacity: 0 })
 
 
 
