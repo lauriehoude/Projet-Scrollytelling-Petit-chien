@@ -164,15 +164,15 @@
                                     }
                                     
                                     .text-chapitre1 {
-                                        font-size: 3vh;
+                                        font-size: 2vh;
                                         position: absolute;
-                                        bottom: 70%;
+                                        bottom: 20vh;
                                         font-style: bold;
-                                        color: var(--black);
+                                        color: var(--white);
                                         font-family: quicksand;
-                                        left: 30px;
-                                        max-height: 10vh;
-                                        display: inline-block;
+                                        right: 30vw;
+                                        width: 40vw;
+                                        display: block;
                                     }
                                     
                                     #chapitre2 {
@@ -187,6 +187,7 @@
                                         display: block;
                                         background-position: center;
                                         object-fit: cover;
+                                      
                                     }
                                     
                                     .chien-courone {
@@ -212,14 +213,13 @@
                                     
                                     .text-chapitre2 {
                                         position: absolute;
-                                        font-size: 3vh;
-                                        bottom: 50%;
+                                        font-size: 2vh;
+                                        bottom: 50vh;
                                         font-style: bold;
                                         color: var(--black);
                                         font-family: quicksand;
-                                        right: 30%;
-                                        width: 30vw;
-                                        max-height: 35vh;
+                                        right: 30vw;
+                                        width: 40vw;
                                         display: block;
                                     }
                                     
@@ -250,13 +250,13 @@
                                     
                                     .text-chapitre3 {
                                         position: absolute;
-                                        font-size: 3vh;
-                                        bottom: 120px;
+                                        font-size: 2vh;
+                                        bottom: 20vh;
                                         font-style: bold;
                                         color: var(--white);
                                         font-family: quicksand;
                                         right: 30%;
-                                        width: 30vw;
+                                        width: 40vw;
                                         max-height: 5vh;
                                         display: block;
                                     }
@@ -280,6 +280,18 @@
                                         width: 80vw;
                                     }
                                     
+                                    .text-chapitre4 {
+                                        position: absolute;
+                                        font-size: 2vh;
+                                        bottom: 30vh;
+                                        font-style: bold;
+                                        color: var(--white);
+                                        font-family: quicksand;
+                                        right: 30%;
+                                        width: 40vw;
+                                        max-height: 5vh;
+                                        display: block;
+                                    }
                                     .is-scrolling .bubule,
                                     .is-scrolling .petit-bonhomme {
                                         animation-play-state: running;
@@ -319,9 +331,12 @@
                                         animation-duration: 1s;
                                         animation-iteration-count: infinite;
                                         animation-timing-function: steps(60);
-                                        margin: 0 auto;
                                         animation-play-state: paused;
                                         background-size: 100% 6000%;
+                                        position: absolute;
+                                        bottom:55vh ;
+                                     
+                                      
                                     }
                                     
                                     @keyframes marche {
@@ -329,7 +344,7 @@
                                             background-position: 0 0;
                                         }
                                         to {
-                                            background-position: 0 -6000%;
+                                            background-position: 0 6000%;
                                         }
                                     }
                                     
@@ -369,7 +384,7 @@
                                     
                                     .chien-paradis {
                                         position: absolute;
-                                        bottom: -40vh;
+                                        bottom: 0vh;
                                         width: 100vw;
                                     }
                                     
