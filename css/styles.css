@@ -218,7 +218,7 @@
                                         font-style: bold;
                                         color: var(--black);
                                         font-family: quicksand;
-                                        right: 30vw;
+                                        right: 20vw;
                                         width: 40vw;
                                         display: block;
                                     }
@@ -238,9 +238,9 @@
                                     
                                     .personnage {
                                         position: absolute;
-                                        width: 35%;
+                                        width: 35vw;
                                         left: 5%;
-                                        bottom: 25%;
+                                        bottom: 25vh;
                                         z-index: 1;
                                     }
                                     
@@ -276,8 +276,10 @@
                                     
                                     .chien-nage {
                                         position: absolute;
-                                        bottom: 10vh;
-                                        width: 80vw;
+                                        bottom: 4vh;
+                                        width: 100vw;
+                                        height: 80vh;
+                                        
                                     }
                                     
                                     .text-chapitre4 {
@@ -334,7 +336,7 @@
                                         animation-play-state: paused;
                                         background-size: 100% 6000%;
                                         position: absolute;
-                                        bottom:55vh ;
+                                        bottom:20vh ;
                                      
                                       
                                     }
