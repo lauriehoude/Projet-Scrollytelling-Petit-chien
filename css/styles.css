@@ -2,10 +2,12 @@
                                         src: url("fonts/Acme-Regular.ttf") format("ttf");
                                         font-family: "acme";
                                     }
+                                    
                                     @font-face {
                                         src: url("fonts/sriracha.ttf") format("ttf");
                                         font-family: "sriracha";
                                     }
+                                    
                                      :root {
                                         --fond: rgb(96, 148, 193);
                                         --bouton: rgb(29, 41, 38);
@@ -143,6 +145,7 @@
                                         box-sizing: border-box;
                                         display: block;
                                         object-fit: cover;
+                                        border: solid red 1px;
                                     }
                                     
                                     .nuage {
@@ -157,6 +160,7 @@
                                         width: 100vw;
                                         top: 50%;
                                         transform: translateY(-25%);
+                                        border: solid blue 1px;
                                     }
                                     
                                     .personnage-fatigue {
@@ -192,7 +196,7 @@
                                         display: block;
                                         background-position: center;
                                         object-fit: cover;
-                                      
+                                        border: solid red 1px;
                                     }
                                     
                                     .chien-courone {
@@ -240,6 +244,7 @@
                                         box-sizing: border-box;
                                         display: block;
                                         object-fit: cover;
+                                        border: solid red 1px;
                                     }
                                     
                                     .personnage {
@@ -280,15 +285,15 @@
                                         box-sizing: border-box;
                                         display: block;
                                         object-fit: cover;
+                                        border: solid red 1px;
                                     }
                                     
                                     .chien-nage {
                                         position: absolute;
                                         top: 50%;
                                         left: 50%;
-                                        transform: translate(-50%, -50%);     
+                                        transform: translate(-50%, -50%);
                                         width: 100vw;
-                                        
                                     }
                                     
                                     .text-chapitre4 {
@@ -304,6 +309,7 @@
                                         display: block;
                                         font-family: 'Quicksand', sans-serif;
                                     }
+                                    
                                     .is-scrolling .bubule,
                                     .is-scrolling .petit-bonhomme {
                                         animation-play-state: running;
@@ -335,13 +341,14 @@
                                         position: absolute;
                                         top: 50%;
                                         left: 50%;
-                                        transform: translate(-50%, -50%);     
+                                        transform: translate(-50%, -50%);
                                     }
                                     
                                     .petit-bonhomme {
                                         background-image: url("../img/chien_sprite.png");
                                         width: 50vw;
-                                        aspect-ratio:  1122 / 632; ;
+                                        aspect-ratio: 1122 / 632;
+                                        ;
                                         animation-name: marche;
                                         background-size: 3300% 100%;
                                         animation-duration: 1s;
@@ -352,10 +359,7 @@
                                         position: absolute;
                                         top: 50%;
                                         left: 50%;
-                                        transform: translate(-50%, -50%);     
-                                  
-                                     
-                                      
+                                        transform: translate(-50%, -50%);
                                     }
                                     
                                     @keyframes marche {
@@ -378,11 +382,12 @@
                                         box-sizing: border-box;
                                         display: block;
                                         object-fit: cover;
+                                        border: solid red 1px;
                                     }
-                                    .text-chapitre5{
+                                    
+                                    .text-chapitre5 {
                                         position: absolute;
                                         font-size: 2vh;
-                                       
                                         font-style: bold;
                                         color: var(--black);
                                         font-family: quicksand;
@@ -391,12 +396,14 @@
                                         display: block;
                                         font-family: 'Quicksand', sans-serif;
                                     }
+                                    
                                     .roche01 {
                                         right: 0;
                                         transform: translateY(-25%);
                                         width: 100vw;
                                         top: 50%;
                                         position: absolute;
+                                        border: solid blue 1px;
                                     }
                                     
                                     #chapitre6 {
@@ -410,6 +417,7 @@
                                         box-sizing: border-box;
                                         display: block;
                                         object-fit: cover;
+                                        border: solid red 1px;
                                     }
                                     
                                     .chien-paradis {
@@ -418,17 +426,17 @@
                                         position: absolute;
                                         top: 50%;
                                         left: 50%;
-                                        transform: translate(-50%, -50%);     
+                                        transform: translate(-50%, -50%);
                                     }
                                     
                                     .montagne {
                                         position: absolute;
                                         bottom: 0;
-                                       width: 5vw;
-                                       z-index: 1;
-                                       
+                                        width: 5vw;
+                                        z-index: 1;
                                     }
-                                    .text-chapitre6{
+                                    
+                                    .text-chapitre6 {
                                         position: absolute;
                                         font-size: 2vh;
                                         font-style: bold;
