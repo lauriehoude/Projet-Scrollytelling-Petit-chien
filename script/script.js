@@ -13,7 +13,7 @@ gsap.to('.text-chapitre1', {
 
     },
     x: '100%',
-    duration: 2,
+    duration: 4,
 });
 gsap.to('.text-chapitre2', {
     scrollTrigger: {
@@ -75,20 +75,38 @@ gsap.to('.text-chapitre6', {
 
 
 let fleche = gsap
-    .to(".fleche", { x: "0vmin", y: "6vmin", ease: "none", repeat: -1 });
+    .to(".fleche", { x: "0vmin", y: "6vmin", ease: "none",repeat:-1 });
 
-let header = gsap.timeline();
+let header = gsap.timeline({
+    scrollTrigger: {
+        scrub: 0.5,
+        markers: true,
+           start: '0% 50%',
+        end: '50% top',
+        trigger: '.is-scrolling',
+      }
+    })
+
+    header.to(".lucky", { x: "10vh", duration: 5, })
+    header.to(".cerceau", { x: "20vh", duration: 5, }, "<")
+    header.to(".cerceau", { y: "-10vh", duration: 5, ease: true, rotate: "360",  })
+    header.to(".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh",  }, "<")
+
+
+let chapitre1 = gsap.timeline({
+
 scrollTrigger: {
-    header.to(".lucky", { x: "10vh", duration: 1, repeat: -1 })
-    header.to(".cerceau", { x: "20vh", duration: 1, repeat: -1 }, "<")
-    header.to(".cerceau", { y: "-10vh", duration: 1, ease: true, rotate: "360", repeat: -1 })
-    header.to(".cerceau", { scaleY: 3, duration: 2, rotate: "360", y: "-40vh", repeat: -1 }, "<")
+    scrub: true,
+    markers: true,
+    start: '75% 0%',
+    end: 'center top',
+    trigger: '.chapitre1',
 }
+});
 
-let chapitre1 = gsap.timeline();
-chapitre1.to(".personnage-fatigue", { y: `-30vh`, x: `20vh`, duration: 3, repeat: -1 });
-chapitre1.to(".personnage-fatigue", { x: `100vw`, duration: 4, repeat: -1 });
-chapitre1.to(".tombeau", { opacity: "0%", ease: true, duration: 2, repeat: -1 }, ">");
+chapitre1.to(".personnage-fatigue", { y: `-30vh`, x: `20vh`, duration: 3,  });
+chapitre1.to(".personnage-fatigue", { x: `100vw`, duration: 4,  });
+chapitre1.to(".tombeau", { opacity: "0%", ease: true, duration: 5,  }, ">");
 
 let chapitre2 = gsap.timeline();
 chapitre2.to(".chien-courone", { y: "50vh", duration: 2, delay: 3, repeat: -1 });
