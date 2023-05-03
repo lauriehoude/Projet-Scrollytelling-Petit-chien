@@ -1,4 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
+
 
 
 gsap.to('.text-chapitre1', {
