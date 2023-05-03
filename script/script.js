@@ -1,26 +1,87 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-gsap.to('.chapitre1', {
+gsap.to('.text-chapitre1', {
     scrollTrigger: {
         trigger: '.text-chapitre1',
         markers: true,
-        start: 'center 75%',
+        start: 'center 35%',
         end: '75% 10%',
+        toggleActions: 'restart complete reverse reset',
+
+    },
+    x: '100%',
+    duration: 2,
+});
+gsap.to('.text-chapitre2', {
+    scrollTrigger: {
+        trigger: '.text-chapitre2',
+        markers: true,
+        start: 'center 85%',
+        end: '25% 10%',
+        toggleActions: 'restart complete reverse reset',
+    },
+    x: '100%',
+    duration: 2,
+});
+gsap.to('.text-chapitre3', {
+    scrollTrigger: {
+        trigger: '.text-chapitre3',
+        markers: true,
+        start: 'center 85%',
+        end: '25% 10%',
+        toggleActions: 'restart complete reverse reset',
+    },
+    x: '100%',
+    duration: 2,
+});
+gsap.to('.text-chapitre4', {
+    scrollTrigger: {
+        trigger: '.text-chapitre4',
+        markers: true,
+        start: 'center 85%',
+        end: '25% 10%',
+        toggleActions: 'restart complete reverse reset',
+    },
+    x: '100%',
+    duration: 2,
+});
+gsap.to('.text-chapitre5', {
+    scrollTrigger: {
+        trigger: '.text-chapitre5',
+        markers: true,
+        start: 'center 85%',
+        end: '25% 10%',
+        toggleActions: 'restart complete reverse reset',
+    },
+    x: '100%',
+    duration: 2,
+});
+gsap.to('.text-chapitre6', {
+    scrollTrigger: {
+        trigger: '.text-chapitre6',
+        markers: true,
+        start: 'center 85%',
+        end: '25% 10%',
+        toggleActions: 'restart complete reverse reset',
     },
     x: '100%',
     duration: 2,
 });
 
 
+
+
 let fleche = gsap
     .to(".fleche", { x: "0vmin", y: "6vmin", ease: "none", repeat: -1 });
 
 let header = gsap.timeline();
-header.to(".lucky", { x: "10vh", duration: 1, repeat: -1 })
-header.to(".cerceau", { x: "20vh", duration: 1, repeat: -1 }, "<")
-header.to(".cerceau", { y: "-10vh", duration: 1, ease: true, rotate: "360", repeat: -1 })
-header.to(".cerceau", { scaleY: 3, duration: 2, rotate: "360", y: "-40vh", repeat: -1 }, "<")
+scrollTrigger: {
+    header.to(".lucky", { x: "10vh", duration: 1, repeat: -1 })
+    header.to(".cerceau", { x: "20vh", duration: 1, repeat: -1 }, "<")
+    header.to(".cerceau", { y: "-10vh", duration: 1, ease: true, rotate: "360", repeat: -1 })
+    header.to(".cerceau", { scaleY: 3, duration: 2, rotate: "360", y: "-40vh", repeat: -1 }, "<")
+}
 
 let chapitre1 = gsap.timeline();
 chapitre1.to(".personnage-fatigue", { y: `-30vh`, x: `20vh`, duration: 3, repeat: -1 });
