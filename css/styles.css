@@ -443,7 +443,7 @@
                                     
                                     .chien-paradis {
                                         position: absolute;
-                                        width: 100vw;
+                                        width: 40vw;
                                         position: absolute;
                                         top: 50%;
                                         left: 50%;
@@ -453,8 +453,8 @@
                                     .montagne {
                                         position: absolute;
                                         bottom: 0;
-                                        width: 5vw;
-                                        z-index: 1;
+                                        width: 30vw;
+                                      
                                     }
                                     
                                     .text-chapitre6 {
