@@ -61,7 +61,7 @@
                                     header {
                                         height: 100%;
                                         width: 100%;
-                                        background-image: url("/img/img_arriere_plan/fond_arc.jpg");
+                                        background-image: url("../img/img_arriere_plan/fond_arc.jpg");
                                         aspect-ratio: 3/2;
                                         position: relative;
                                         object-fit: cover;
