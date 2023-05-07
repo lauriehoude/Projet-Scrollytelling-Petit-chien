@@ -67,10 +67,6 @@
                                         object-fit: cover;
                                     }
                                     
-                                    .bee {
-                                        position: absolute;
-                                    }
-                                    
                                     h1 {
                                         position: absolute;
                                         left: 45%;
@@ -397,7 +393,7 @@
                                     }
                                     
                                     #chapitre5 {
-                                        background-image: url("../img/img_arriere_plan/chapitre_02.png");
+                                        background-image: url("../img/img_arriere_plan/chapitre_05.png");
                                         position: relative;
                                         height: 100%;
                                         width: 100%;
