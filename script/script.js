@@ -1,8 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
 <<<<<<< HEAD
+<<<<<<< HEAD
 gsap.registerPlugin(DrawSVGPlugin);
 
 
+=======
+
+
+
+>>>>>>> parent of 8250e2b (zz)
 =======
 
 
