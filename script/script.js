@@ -1,15 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
-//gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
 
-function anim() {
-    gsap.fromTo(
-        "#abeille", { drawSVG: "0% 0%" }, {
-            drawSVG: "0% 100%",
-            duration: 1,
-            ease: "power1.inOut"
-        }
-    );
-}
+
 
 gsap.to('.text-chapitre1', {
     scrollTrigger: {
