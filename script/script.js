@@ -70,25 +70,15 @@ let fleche = gsap.to(".fleche", {
 
 let header = gsap.timeline({
     scrollTrigger: {
-        scrub: 0.5,
+        scrub: 1,
         markers: true,
         start: "0% 50%",
         end: "50% top",
         trigger: ".is-scrolling",
     },
 });
-gsap.to("h3", {
-   xPercent:300,
-     scrollTrigger: {
-         trigger: "#text-header",
-         start: "center center",
-         end: "bottom top",
-         scrub: 1,
-         markers: true,
-         scale:5
-     }
-     
- });
+
+
 gsap.from(
     "#cloud", {
 
@@ -105,6 +95,7 @@ header.to(".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh" },
     "<"
 
 );
+header.to("h3",{scale:2},"<");
 gsap.to("#ampoule", {
 
     morphSVG: "#maison",

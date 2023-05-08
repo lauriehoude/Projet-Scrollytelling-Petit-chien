@@ -31,6 +31,7 @@ html {
 body {
     font-family: "Quicksand", sans-serif;
     height: 100vh;
+    
 }
 
 img {
@@ -67,20 +68,28 @@ header {
     object-fit: cover;
 }
 h3{
+    
     position: absolute;
-    left: 40%;
-    top: 300px;
     color: var(--vertpale);
-    font-size: 30vh;
+    font-size: 5vh;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: var(--vertpale);
+    font-size: 5vh;
     filter:  hue-rotate(100%);
-    backdrop-filter:blur(45px) ;
+    backdrop-filter:blur(5px) ;
 }
 h1 {
     position: absolute;
-    left: 45%;
-    top: 0px;
     color: var(--vertpale);
     font-size: 5vh;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+   
 }
 
 .fleche {
@@ -92,18 +101,17 @@ h1 {
 .cloud{
     position: absolute;
     top: 5vh;
-    right: 40vw;
+    left: 0vw;
   
 }
 .lucky-courone {
     position: absolute;
     width: 40vw;
     height: 70vh;
-    margin: 0 auto;
-    display: block;
-    right: 30vw;
-    top: 20vh;
+    left: 50%;
+    top: 50%;
     z-index: 10;
+    transform: translate(-50%, -50%);
 }
 
 .cerceau {
@@ -122,6 +130,7 @@ h1 {
     right: 0;
     bottom: 0;
     object-position: 50% 50%;
+    z-index: 3;
 }
 
 .text-header {
@@ -129,7 +138,8 @@ h1 {
     position: absolute;
     bottom: 0;
     width: 70vw;
-    left: 30%;
+    left: 20vw;
+ 
     font-family: "Quicksand", sans-serif;
 }
 
