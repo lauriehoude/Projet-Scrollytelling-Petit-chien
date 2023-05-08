@@ -128,16 +128,16 @@ gsap.to(".text-chapitre1",{
     scrollTrigger: {
       trigger: "#chapitre1",
       start: "center bottom",
-      end: "100% center",
+      end: "100% top",
       scrub: 2,
     }
 });
 gsap.to(".nuage", {
-    x:500,
+    xPercent:200,
      scrollTrigger: {
          trigger: "#chapitre1",
          start: "center bottom",
-         end: "bottom top",
+         end: "100% top",
          scrub: 1,
          markers: true
      }
