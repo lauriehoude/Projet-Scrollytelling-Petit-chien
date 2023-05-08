@@ -84,6 +84,14 @@ let header = gsap.timeline({
         trigger: ".is-scrolling",
     },
 });
+gsap.from(
+    "#cloud", {
+
+        drawSVG: "0 0",
+        duration: 10,
+    }
+
+);
 
 header.to(".lucky", { x: "10vh", duration: 5 });
 header.to(".cerceau", { x: "20vh", duration: 5 }, "<");
