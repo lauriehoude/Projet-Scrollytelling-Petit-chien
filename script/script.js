@@ -133,7 +133,7 @@ gsap.to(".tombeau", {
         scrub: true,
         markers: true,
     },
-    y: hauteurTotaleDuDocument * -0.40,
+    y: hauteurTotaleDuDocument * -0.20,
     ease: "none",
 })
 
@@ -152,7 +152,7 @@ gsap.to(".text-chapitre1", {
 
 chapitre1.to(".personnage-fatigue", { y: `-30vw`, x: `20vh`, duration: 5 });
 chapitre1.to(".personnage-fatigue", { y: `30vw`, x: `80vw`, delay: 4 });
-chapitre1.to(".tombeau", { opacity: "100%", ease: true, duration: 5 }, ">");
+chapitre1.to(".tombeau", { y: `30vw`, opacity: "100%", ease: true, duration: 5 }, ">");
 chapitre1.to(".tombeau", { opacity: "50%", ease: true, duration: 5 }, ">");
 
 let chapitre2 = gsap.timeline({

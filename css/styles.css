@@ -195,9 +195,9 @@ main {
 .text-chapitre1 {
     font-size: 2vh;
     position: absolute;
-    bottom: 20vh;
+    bottom: 10vh;
     font-style: bold;
-    color: var(--white);
+    color: var(--black);
     font-family: quicksand;
     right: 30vw;
     width: 40vw;
@@ -207,15 +207,15 @@ main {
 
 #maison {
     z-index: 10;
-    position: absolute;
-    top: 40vh;
+    position: relative;
+    bottom: 0%;
     visibility: hidden;
 }
 
 #ampoule {
     z-index: 10;
-    position: absolute;
-    top: 40vh;
+    position: relative;
+    bottom: 0%;
 }
 
 #chapitre2 {
