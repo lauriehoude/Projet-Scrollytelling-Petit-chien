@@ -72,7 +72,8 @@ h3{
     top: 300px;
     color: var(--vertpale);
     font-size: 30vh;
-    filter:hue-rotate(100%), saturate(30%);
+    filter:  hue-rotate(100%);
+    backdrop-filter:blur(45px) ;
 }
 h1 {
     position: absolute;

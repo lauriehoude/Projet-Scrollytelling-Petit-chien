@@ -77,6 +77,18 @@ let header = gsap.timeline({
         trigger: ".is-scrolling",
     },
 });
+gsap.to("h3", {
+   xPercent:300,
+     scrollTrigger: {
+         trigger: "#text-header",
+         start: "center center",
+         end: "bottom top",
+         scrub: 1,
+         markers: true,
+         scale:5
+     }
+     
+ });
 gsap.from(
     "#cloud", {
 
@@ -89,9 +101,9 @@ gsap.from(
 header.to(".lucky", { x: "10vh", duration: 5 });
 header.to(".cerceau", { x: "20vh", duration: 5 }, "<");
 header.to(".cerceau", { y: "-10vh", duration: 5, ease: true, rotate: "360" });
-header.to(
-    ".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh" },
+header.to(".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh" },
     "<"
+
 );
 gsap.to("#ampoule", {
 
