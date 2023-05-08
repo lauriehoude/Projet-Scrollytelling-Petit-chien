@@ -80,7 +80,7 @@ let header = gsap.timeline({
 gsap.from(
     "#cloud", {
 
-        drawSVG: "0 0",
+        drawSVG: "0 50%",
         duration: 10,
     }
 
@@ -99,7 +99,7 @@ gsap.to("#ampoule", {
     duration: 4,
 
 });
-let chapitre1 = gsap.timeline({
+let chapitre01 = gsap.timeline({
     scrollTrigger: {
         scrub: true,
         markers: true,
@@ -129,7 +129,7 @@ gsap.to(".text-chapitre1",{
       trigger: "#chapitre1",
       start: "center bottom",
       end: "100% top",
-      scrub: 2,
+      scrub: 3,
     }
 });
 gsap.to(".nuage", {
@@ -144,25 +144,10 @@ gsap.to(".nuage", {
  });
 
 
-//gsap.to(".nuage", {
- //   transform-origin: "100% 50%",
-  //  ease: "none",
-   // scrollTrigger: {
-     //   trigger: "#chapitre1",
-     //   start: "top bottom",
-     //   end: "bottom top",
-      //  scrub: true,
-       // markers: true
-   // }
-//});
-
-
-
-
-chapitre1.to(".pensee", { y: `-10vw`, duration: 5 });
-chapitre1.to(".pensee", {  x: `50vw`, delay: 4 });
-chapitre1.to(".tombeau", { y: `30vw`, opacity: "100%", ease: true, duration: 5 }, ">");
-chapitre1.to(".tombeau", { opacity: "50%", ease: true, duration: 5 }, ">");
+chapitre01.to(".pensee", { y: `-10vw`, duration: 5 });
+chapitre01.to(".pensee", {  x: `50vw`, delay: 4 });
+chapitre01.to(".tombeau", { y: `30vw`, opacity: "100%", ease: true, duration: 5 }, ">");
+chapitre01.to(".tombeau", { opacity: "50%", ease: true, duration: 5 }, ">");
 
 let chapitre2 = gsap.timeline({
     scrollTrigger: {

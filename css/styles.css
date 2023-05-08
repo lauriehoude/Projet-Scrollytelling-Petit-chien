@@ -66,7 +66,14 @@ header {
     position: relative;
     object-fit: cover;
 }
-
+h3{
+    position: absolute;
+    left: 40%;
+    top: 300px;
+    color: var(--vertpale);
+    font-size: 30vh;
+    filter:hue-rotate(100%), saturate(30%);
+}
 h1 {
     position: absolute;
     left: 45%;
@@ -81,7 +88,12 @@ h1 {
     right: 60px;
     bottom: 20%;
 }
-
+.cloud{
+    position: absolute;
+    top: 5vh;
+    right: 40vw;
+  
+}
 .lucky-courone {
     position: absolute;
     width: 40vw;
@@ -90,6 +102,7 @@ h1 {
     display: block;
     right: 30vw;
     top: 20vh;
+    z-index: 10;
 }
 
 .cerceau {
@@ -183,7 +196,7 @@ main {
     right: 0vw;
     top: 0;
     width: 100vw;
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
 
 
