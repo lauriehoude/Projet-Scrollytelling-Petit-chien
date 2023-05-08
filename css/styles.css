@@ -218,6 +218,7 @@ main {
     bottom: 0%;
 }
 
+
 #chapitre2 {
     background-image: url("../img/img_arriere_plan/chapitre_02.png");
     position: relative;
@@ -280,7 +281,14 @@ main {
     object-fit: cover;
     border: solid red 1px;
 }
-
+.trace{
+    position: absolute;
+    z-index: 10;
+}
+.vent{
+    position: absolute;
+    z-index: 10;
+}
 .personnage {
     position: absolute;
     width: 35vw;

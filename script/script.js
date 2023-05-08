@@ -36,6 +36,14 @@ gsap.to(".text-chapitre3", {
     x: "100%",
     duration: 2,
 });
+gsap.to('.vent', {
+    motionPath: {
+      path: '.trace',
+    },
+    duration: 4,
+    repeat: -1,
+    yoyo: true,
+  })
 gsap.to(".text-chapitre4", {
     scrollTrigger: {
         trigger: ".text-chapitre4",
