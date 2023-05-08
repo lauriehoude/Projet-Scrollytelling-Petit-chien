@@ -95,13 +95,10 @@ header.to(".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh" },
     "<"
 
 );
-header.to("h3",{scale:2},"<");
-gsap.to("#ampoule", {
+header.to("h3",{scale:5},"<");
 
-    morphSVG: "#maison",
-    duration: 4,
 
-});
+
 let chapitre01 = gsap.timeline({
     scrollTrigger: {
         scrub: true,
@@ -113,7 +110,13 @@ let chapitre01 = gsap.timeline({
 });
 
 
+gsap.to("#ampoule", {
 
+    morphSVG: "#maison",
+    duration: 4,
+    ease: "power1.inOut",
+
+});
 
 gsap.to("#chapitre1", {
    backgroundPosition: "50% 100%",
@@ -149,8 +152,7 @@ gsap.to(".nuage", {
 
 chapitre01.to(".pensee", { y: `-10vw`, duration: 5 });
 chapitre01.to(".pensee", {  x: `50vw`, delay: 4 });
-chapitre01.to(".tombeau", { y: `30vw`, opacity: "100%", ease: true, duration: 5 }, ">");
-chapitre01.to(".tombeau", { opacity: "50%", ease: true, duration: 5 }, ">");
+
 
 let chapitre2 = gsap.timeline({
     scrollTrigger: {
@@ -203,6 +205,7 @@ gsap.to('#vent', {
     duration: 4,
     repeat: -1,
     yoyo: true,
+    ease: "power1.inOut",
   
   })
 
