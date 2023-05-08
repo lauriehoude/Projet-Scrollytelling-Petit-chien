@@ -70,23 +70,12 @@ let fleche = gsap.to(".fleche", {
 
 let header = gsap.timeline({
     scrollTrigger: {
-        scrub: 1,
         markers: true,
-        start: "0% 50%",
+        start: "10% 50%",
         end: "50% top",
-        trigger: ".is-scrolling",
+        trigger:"header",
     },
 });
-
-
-gsap.from(
-    "#cloud", {
-
-        drawSVG: "0 50%",
-        duration: 10,
-    }
-
-);
 
 header.to(".lucky", { x: "10vh", duration: 5 });
 header.to(".cerceau", { x: "20vh", duration: 5 }, "<");
@@ -97,15 +86,26 @@ header.to(".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh" },
 );
 header.to("h3",{scale:5},"<");
 
+gsap.from(
+    "#cloud", {
+
+        drawSVG: "0 50%",
+        duration: 10,
+    }
+
+);
+
+
 
 
 let chapitre01 = gsap.timeline({
     scrollTrigger: {
-        scrub: true,
+       
         markers: true,
         start: "center center",
         end: "center top",
         trigger: "#chapitre1",
+        toggleActions: "restart complete reverse reset",
     },
 });
 
@@ -156,11 +156,11 @@ chapitre01.to(".pensee", {  x: `50vw`, delay: 4 });
 
 let chapitre2 = gsap.timeline({
     scrollTrigger: {
-        scrub: true,
         markers: true,
         start: "50% 0%",
         end: "center bottom",
         trigger: "#chapitre2",
+        toggleActions: "restart complete reverse reset",
     },
 });
 
@@ -175,49 +175,47 @@ chapitre2.to(".courone", { x: "30vw", duration: 3, rotate: "360" }, "<");
 
 let chapitre3 = gsap.timeline({
     scrollTrigger: {
-        scrub: true,
         markers: true,
         start: "center center",
         end: "center top",
         trigger: "#chapitre3",
+        toggleActions: "restart complete reverse reset",
     },
 });
 chapitre3.to(".personnage", {
-    x: "20vw",
+    x: "5vw",
     duration: 6,
     opacity: 0,
     scale: 1,
     delay: 1,
 });
 chapitre3.to(".personnage", {
-    x: "100vw",
+    x: "40vw",
     opacity: 100,
-    duration: 6,
+    duration: 16,
     scale: 2,
 });
-chapitre3.to('#vent', {
+gsap.to('#vent', {
     motionPath: {
     align:"#trace",
       path: '#trace',
       start: 0,
-      end: 0.75,
+      end: 1.25,
      
     },
     duration: 16,
+    scale:2,
     
-   
-   
-    ease: "power1.inOut",
-  
-  })
+  },)
 
 let chapitre4 = gsap.timeline({
     scrollTrigger: {
-        scrub: true,
+        
         markers: true,
         start: "75% 0%",
         end: "center top",
         trigger: "#chapitre4",
+        toggleActions: "restart complete reverse reset",
     },
 });
 
@@ -226,7 +224,7 @@ chapitre4.to(".chien-nage", { x: "100vw", duration: 7, scale: 2 });
 
 let chapitre5 = gsap.timeline({
     scrollTrigger: {
-        scrub: true,
+        toggleActions: "restart complete reverse reset",
         markers: true,
         pin: true,
         start: "75% 0%",
@@ -239,7 +237,7 @@ chapitre5.to(".roche01", { x: "70vw", duration: 2, ease: true });
 
 let chapitre6 = gsap.timeline({
     scrollTrigger: {
-        scrub: true,
+        
         markers: true,
         pin: true,
         start: "center 50%",
@@ -273,6 +271,7 @@ chapitre6.to("paradis", {
 });
 chapitre6.to(".montagne", { y: "0vh", duration: 2, ease: true, scale: 1 });
 chapitre6.to(".montagne", { y: "20vh", duration: 2, ease: true, scale: 0.8 });
+
 
 let myMinuteur;
 

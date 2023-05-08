@@ -322,7 +322,7 @@ main {
 .tracer{
     position: absolute;
     right:0%;
-    bottom: 50%;
+    bottom: 30%;
     transform: translate(-50%, -50%);
     z-index: 10;
   
@@ -331,8 +331,6 @@ main {
     position: relative;
     z-index: 10;
     visibility: hidden;
-    right: 0;
-    bottom: 0%;
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -341,8 +339,7 @@ main {
 .vent{
     position:relative;
     z-index: 10;
-    right: 0;
-    bottom: 0%;
+    
     object-position: 50% 50%;
     object-fit: cover;
     width: 100vw;
@@ -503,15 +500,14 @@ main {
 .roche01 {
     right: 0;
     transform: translateY(-25%);
-    width: 100vw;
+    width: 80vw;
     top: 50%;
     position: absolute;
     border: solid blue 1px;
 }
 
 #chapitre6 {
-    background-image: url("../img/img_arriere_plan/fond.png");
-    background-color: aqua;
+    background-image: url("../img/img_arriere_plan/chapitre_04.png");
     position: relative;
     height: 100%;
     width: 100%;
@@ -521,16 +517,15 @@ main {
     box-sizing: border-box;
     display: block;
     object-fit: cover;
-    border: solid red 1px;
-    z-index: 1;
+    border: solid red 1px;;
 }
 
-.chien-paradis {
+.paradis {
     position: absolute;
     width: 40vw;
     z-index: 5;
     top: 50%;
-    left: 50%;
+    left: 00%;
     transform: translate(-50%, -50%);
 }
 
