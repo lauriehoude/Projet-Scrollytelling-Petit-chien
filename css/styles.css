@@ -158,51 +158,63 @@ main {
 
 #chapitre1 {
     position: relative;
-    background-image: url("../img/img_arriere_plan/chapitre_01.png");
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 16/9;
+    background-color: red;
+    background-image:url("../img/img_arriere_plan/chapitre_01.png");
+    height: 100vh;
+    width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
     display: block;
-    object-fit: cover;
     border: solid red 1px;
-}
+    background-attachment: scroll;
+    background-position: 50% 0%;
 
-.nuage {
+}
+.gazon{
     position: absolute;
     right: 0;
     width: 100vw;
+    bottom: 0;
+    
 }
-
-.tombeau {
+.nuage {
     position: absolute;
+    right: 100vw;
+    top: 0;
     width: 100vw;
-    top: 50%;
-    transform: translateY(-25%);
-    border: solid blue 1px;
 }
 
-.personnage-fatigue {
+
+.pensee{
     position: absolute;
     left: 140px;
     bottom: 0;
-    width: 10vw;
     object-position: 50% 50%;
+    height: 30vh;
+}
+
+.personnage-fatigue {
+    position: relative;
+    left: 70px;
+    bottom: 0;
+    width: 10vw;
 }
 
 .text-chapitre1 {
     font-size: 2vh;
     position: absolute;
-    bottom: 10vh;
+    top: 30vh;
+    right:0vw;
     font-style: bold;
     color: var(--black);
     font-family: quicksand;
-    right: 30vw;
+   z-index: 30;
     width: 40vw;
     display: block;
     font-family: "Quicksand", sans-serif;
+    transform: translateX(0%);
+    
 }
 
 #maison {
@@ -281,13 +293,16 @@ main {
     object-fit: cover;
     border: solid red 1px;
 }
-.trace{
+#trace{
     position: absolute;
     z-index: 10;
+    visibility: hidden;
 }
-.vent{
+#vent{
     position: absolute;
     z-index: 10;
+   
+    
 }
 .personnage {
     position: absolute;

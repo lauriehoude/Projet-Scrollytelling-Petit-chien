@@ -3,17 +3,7 @@ gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
 
-gsap.to(".text-chapitre1", {
-    scrollTrigger: {
-        trigger: ".text-chapitre1",
-        markers: true,
-        start: "center 35%",
-        end: "75% 10%",
-        toggleActions: "restart complete reverse reset",
-    },
-    x: "100%",
-    duration: 4,
-});
+
 gsap.to(".text-chapitre2", {
     scrollTrigger: {
         trigger: ".text-chapitre2",
@@ -36,14 +26,7 @@ gsap.to(".text-chapitre3", {
     x: "100%",
     duration: 2,
 });
-gsap.to('.vent', {
-    motionPath: {
-      path: '.trace',
-    },
-    duration: 4,
-    repeat: -1,
-    yoyo: true,
-  })
+
 gsap.to(".text-chapitre4", {
     scrollTrigger: {
         trigger: ".text-chapitre4",
@@ -126,41 +109,58 @@ let chapitre1 = gsap.timeline({
     },
 });
 
-let hauteurTotaleDuDocument = document.body.scrollHeight;
-gsap.to(".personnage-fatigue", {
+
+
+
+gsap.to("#chapitre1", {
+   backgroundPosition: "50% 100%",
     scrollTrigger: {
-        scrub: true,
-        markers: true,
-    },
-    y: hauteurTotaleDuDocument * -0.25,
+        trigger: "#chapitre1",
+        start: "center center",
+        end: "bottom top",
+        scrub: 1,
+        markers: true
+    }
+});
+gsap.to(".text-chapitre1",{
+    xPercent:200,
     ease: "none",
-})
-
-
-gsap.to(".tombeau", {
     scrollTrigger: {
-        scrub: true,
-        markers: true,
-    },
-    y: hauteurTotaleDuDocument * -0.20,
-    ease: "none",
-})
+      trigger: "#chapitre1",
+      start: "center bottom",
+      end: "100% center",
+      scrub: 2,
+    }
+});
+gsap.to(".nuage", {
+    x:500,
+     scrollTrigger: {
+         trigger: "#chapitre1",
+         start: "center bottom",
+         end: "bottom top",
+         scrub: 1,
+         markers: true
+     }
+ });
+
+
+//gsap.to(".nuage", {
+ //   transform-origin: "100% 50%",
+  //  ease: "none",
+   // scrollTrigger: {
+     //   trigger: "#chapitre1",
+     //   start: "top bottom",
+     //   end: "bottom top",
+      //  scrub: true,
+       // markers: true
+   // }
+//});
 
 
 
-gsap.to(".text-chapitre1", {
-    scrollTrigger: {
-        scrub: true,
-        markers: true,
-    },
-    y: hauteurTotaleDuDocument * -0.75,
-    ease: "none",
-})
 
-
-
-chapitre1.to(".personnage-fatigue", { y: `-30vw`, x: `20vh`, duration: 5 });
-chapitre1.to(".personnage-fatigue", { y: `30vw`, x: `80vw`, delay: 4 });
+chapitre1.to(".pensee", { y: `-10vw`, duration: 5 });
+chapitre1.to(".pensee", {  x: `50vw`, delay: 4 });
 chapitre1.to(".tombeau", { y: `30vw`, opacity: "100%", ease: true, duration: 5 }, ">");
 chapitre1.to(".tombeau", { opacity: "50%", ease: true, duration: 5 }, ">");
 
@@ -204,6 +204,19 @@ chapitre3.to(".personnage", {
     duration: 1,
     scale: 2,
 });
+gsap.to('#vent', {
+    motionPath: {
+    align:"#trace",
+      path: '#trace',
+      start: 0.25,
+      end: 0.75,
+      autoRotate:true,
+    },
+    duration: 4,
+    repeat: -1,
+    yoyo: true,
+  
+  })
 
 let chapitre4 = gsap.timeline({
     scrollTrigger: {
