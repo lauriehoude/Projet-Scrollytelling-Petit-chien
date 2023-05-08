@@ -172,7 +172,6 @@ main {
 
 .nuage {
     position: absolute;
-    z-index: 2;
     right: 0;
     width: 100vw;
 }
@@ -204,6 +203,19 @@ main {
     width: 40vw;
     display: block;
     font-family: "Quicksand", sans-serif;
+}
+
+#maison {
+    z-index: 10;
+    position: absolute;
+    top: 40vh;
+    visibility: hidden;
+}
+
+#ampoule {
+    z-index: 10;
+    position: absolute;
+    top: 40vh;
 }
 
 #chapitre2 {

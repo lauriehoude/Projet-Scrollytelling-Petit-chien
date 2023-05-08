@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 gsap.to(".text-chapitre1", {
     scrollTrigger: {
@@ -100,18 +101,56 @@ header.to(
     ".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh" },
     "<"
 );
+gsap.to("#ampoule", {
 
+    morphSVG: "#maison",
+    duration: 4,
+
+});
 let chapitre1 = gsap.timeline({
     scrollTrigger: {
         scrub: true,
         markers: true,
-        start: "0% 70%",
+        start: "center center",
         end: "center top",
         trigger: "#chapitre1",
     },
 });
 
-chapitre1.to(".personnage-fatigue", { y: `-30vw`, x: `20vh`, duration: 3 });
+let hauteurTotaleDuDocument = document.body.scrollHeight;
+gsap.to(".personnage-fatigue", {
+    scrollTrigger: {
+        scrub: true,
+        markers: true,
+    },
+    y: hauteurTotaleDuDocument * -0.25,
+    ease: "none",
+})
+
+
+gsap.to(".tombeau", {
+    scrollTrigger: {
+        scrub: true,
+        markers: true,
+    },
+    y: hauteurTotaleDuDocument * -0.40,
+    ease: "none",
+})
+
+
+
+gsap.to(".text-chapitre1", {
+    scrollTrigger: {
+        scrub: true,
+        markers: true,
+    },
+    y: hauteurTotaleDuDocument * -0.75,
+    ease: "none",
+})
+
+
+
+chapitre1.to(".personnage-fatigue", { y: `-30vw`, x: `20vh`, duration: 5 });
 chapitre1.to(".personnage-fatigue", { y: `30vw`, x: `80vw`, delay: 4 });
 chapitre1.to(".tombeau", { opacity: "100%", ease: true, duration: 5 }, ">");
 chapitre1.to(".tombeau", { opacity: "50%", ease: true, duration: 5 }, ">");
@@ -125,6 +164,12 @@ let chapitre2 = gsap.timeline({
         trigger: "#chapitre2",
     },
 });
+
+
+
+
+
+
 chapitre2.to(".chien-courone", { y: "50vh", duration: 2, delay: 3 });
 chapitre2.to(".courone", { x: "30vw", duration: 3, rotate: "360" }, "<");
 
