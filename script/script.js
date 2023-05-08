@@ -74,6 +74,7 @@ let header = gsap.timeline({
         start: "10% 50%",
         end: "50% top",
         trigger:"header",
+        scrub:1
     },
 });
 
@@ -100,12 +101,12 @@ gsap.from(
 
 let chapitre01 = gsap.timeline({
     scrollTrigger: {
-       
+       scrub:1,
         markers: true,
         start: "center center",
         end: "center top",
         trigger: "#chapitre1",
-        toggleActions: "restart complete reverse reset",
+        
     },
 });
 
@@ -156,11 +157,12 @@ chapitre01.to(".pensee", {  x: `50vw`, delay: 4 });
 
 let chapitre2 = gsap.timeline({
     scrollTrigger: {
+        scrub:1,
         markers: true,
         start: "50% 0%",
         end: "center bottom",
         trigger: "#chapitre2",
-        toggleActions: "restart complete reverse reset",
+        
     },
 });
 
@@ -175,11 +177,12 @@ chapitre2.to(".courone", { x: "30vw", duration: 3, rotate: "360" }, "<");
 
 let chapitre3 = gsap.timeline({
     scrollTrigger: {
+        scrub:1,
         markers: true,
         start: "center center",
         end: "center top",
         trigger: "#chapitre3",
-        toggleActions: "restart complete reverse reset",
+        
     },
 });
 chapitre3.to(".personnage", {
@@ -210,12 +213,12 @@ gsap.to('#vent', {
 
 let chapitre4 = gsap.timeline({
     scrollTrigger: {
-        
+        scrub:1,
         markers: true,
         start: "75% 0%",
         end: "center top",
         trigger: "#chapitre4",
-        toggleActions: "restart complete reverse reset",
+        
     },
 });
 
@@ -224,12 +227,13 @@ chapitre4.to(".chien-nage", { x: "100vw", duration: 7, scale: 2 });
 
 let chapitre5 = gsap.timeline({
     scrollTrigger: {
-        toggleActions: "restart complete reverse reset",
+ 
         markers: true,
         pin: true,
         start: "75% 0%",
         end: "center top",
         trigger: "#chapitre5",
+        scrub:1
     },
 });
 chapitre5.to(".roche01", { y: "-10vh", duration: 2, ease: true });
@@ -237,13 +241,13 @@ chapitre5.to(".roche01", { x: "70vw", duration: 2, ease: true });
 
 let chapitre6 = gsap.timeline({
     scrollTrigger: {
-        
+        scrub:1,
         markers: true,
         pin: true,
         start: "center 50%",
         end: "25% 10%",
         trigger: "#chapitre6",
-        toggleActions: "restart complete reverse reset",
+        
     },
 });
 chapitre6.to(".nuage", { x: "0vw", duration: 2, ease: true });
