@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
 
 gsap.to(".text-chapitre1", {
     scrollTrigger: {
