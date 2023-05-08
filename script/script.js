@@ -172,18 +172,19 @@ let chapitre2 = gsap.timeline({
 chapitre2.to(".chien-courone", { y: "50vh", duration: 2, delay: 3 });
 chapitre2.to(".courone", { x: "30vw", duration: 3, rotate: "360" }, "<");
 
+
 let chapitre3 = gsap.timeline({
     scrollTrigger: {
         scrub: true,
         markers: true,
-        start: "center 85%",
-        end: "25% 10%",
+        start: "center center",
+        end: "center top",
         trigger: "#chapitre3",
     },
 });
 chapitre3.to(".personnage", {
     x: "20vw",
-    duration: 2,
+    duration: 6,
     opacity: 0,
     scale: 1,
     delay: 1,
@@ -191,20 +192,21 @@ chapitre3.to(".personnage", {
 chapitre3.to(".personnage", {
     x: "100vw",
     opacity: 100,
-    duration: 1,
+    duration: 6,
     scale: 2,
 });
-gsap.to('#vent', {
+chapitre3.to('#vent', {
     motionPath: {
     align:"#trace",
       path: '#trace',
-      start: 0.25,
+      start: 0,
       end: 0.75,
-      autoRotate:true,
+     
     },
-    duration: 4,
-    repeat: -1,
-    yoyo: true,
+    duration: 16,
+    
+   
+   
     ease: "power1.inOut",
   
   })

@@ -276,6 +276,7 @@ main {
     width: 20vw;
     height: 35vh;
     margin: 0 auto;
+    top: 20vh;
 }
 
 .chien {
@@ -318,14 +319,35 @@ main {
     object-fit: cover;
     border: solid red 1px;
 }
-#trace{
+.tracer{
     position: absolute;
+    right:0%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  
+}
+.trace{
+    position: relative;
     z-index: 10;
     visibility: hidden;
+    right: 0;
+    bottom: 0%;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+
 }
-#vent{
-    position: absolute;
+.vent{
+    position:relative;
     z-index: 10;
+    right: 0;
+    bottom: 0%;
+    object-position: 50% 50%;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+
    
     
 }
