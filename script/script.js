@@ -73,8 +73,8 @@ let header = gsap.timeline({
         markers: true,
         start: "10% 50%",
         end: "50% top",
-        trigger:"header",
-        scrub:1
+        trigger: "header",
+        scrub: 1
     },
 });
 
@@ -85,7 +85,7 @@ header.to(".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh" },
     "<"
 
 );
-header.to("h3",{scale:5},"<");
+header.to("h3", { scale: 5 }, "<");
 
 gsap.from(
     "#cloud", {
@@ -101,12 +101,12 @@ gsap.from(
 
 let chapitre01 = gsap.timeline({
     scrollTrigger: {
-       scrub:1,
+        scrub: 1,
         markers: true,
         start: "center center",
         end: "center top",
         trigger: "#chapitre1",
-        
+
     },
 });
 
@@ -114,13 +114,13 @@ let chapitre01 = gsap.timeline({
 gsap.to("#ampoule", {
 
     morphSVG: "#maison",
-    duration: 4,
-    ease: "power1.inOut",
+    duration: 16,
+    ease: "slow",
 
 });
 
 gsap.to("#chapitre1", {
-   backgroundPosition: "50% 100%",
+    backgroundPosition: "50% 100%",
     scrollTrigger: {
         trigger: "#chapitre1",
         start: "center center",
@@ -129,40 +129,40 @@ gsap.to("#chapitre1", {
         markers: true
     }
 });
-gsap.to(".text-chapitre1",{
-    xPercent:200,
+gsap.to(".text-chapitre1", {
+    xPercent: 200,
     ease: "none",
     scrollTrigger: {
-      trigger: "#chapitre1",
-      start: "center bottom",
-      end: "100% top",
-      scrub: 3,
+        trigger: "#chapitre1",
+        start: "center bottom",
+        end: "100% top",
+        scrub: 3,
     }
 });
 gsap.to(".nuage", {
-    xPercent:200,
-     scrollTrigger: {
-         trigger: "#chapitre1",
-         start: "center bottom",
-         end: "100% top",
-         scrub: 1,
-         markers: true
-     }
- });
+    xPercent: 200,
+    scrollTrigger: {
+        trigger: "#chapitre1",
+        start: "center bottom",
+        end: "100% top",
+        scrub: 1,
+        markers: true
+    }
+});
 
 
 chapitre01.to(".pensee", { y: `-10vw`, duration: 5 });
-chapitre01.to(".pensee", {  x: `50vw`, delay: 4 });
+chapitre01.to(".pensee", { x: `50vw`, delay: 4 });
 
 
 let chapitre2 = gsap.timeline({
     scrollTrigger: {
-        scrub:1,
+        scrub: 1,
         markers: true,
         start: "50% 0%",
         end: "center bottom",
         trigger: "#chapitre2",
-        
+
     },
 });
 
@@ -177,12 +177,12 @@ chapitre2.to(".courone", { x: "30vw", duration: 3, rotate: "360" }, "<");
 
 let chapitre3 = gsap.timeline({
     scrollTrigger: {
-        scrub:1,
+        scrub: 1,
         markers: true,
         start: "center center",
         end: "center top",
         trigger: "#chapitre3",
-        
+
     },
 });
 chapitre3.to(".personnage", {
@@ -200,25 +200,25 @@ chapitre3.to(".personnage", {
 });
 gsap.to('#vent', {
     motionPath: {
-    align:"#trace",
-      path: '#trace',
-      start: 0,
-      end: 1.25,
-     
+        align: "#trace",
+        path: '#trace',
+        start: 0,
+        end: 1.25,
+
     },
     duration: 16,
-    scale:2,
-    
-  },)
+    scale: 2,
+
+}, )
 
 let chapitre4 = gsap.timeline({
     scrollTrigger: {
-        scrub:1,
+        scrub: 1,
         markers: true,
         start: "75% 0%",
         end: "center top",
         trigger: "#chapitre4",
-        
+
     },
 });
 
@@ -227,13 +227,13 @@ chapitre4.to(".chien-nage", { x: "100vw", duration: 7, scale: 2 });
 
 let chapitre5 = gsap.timeline({
     scrollTrigger: {
- 
+
         markers: true,
         pin: true,
         start: "75% 0%",
         end: "center top",
         trigger: "#chapitre5",
-        scrub:1
+        scrub: 1
     },
 });
 chapitre5.to(".roche01", { y: "-10vh", duration: 2, ease: true });
@@ -241,13 +241,13 @@ chapitre5.to(".roche01", { x: "70vw", duration: 2, ease: true });
 
 let chapitre6 = gsap.timeline({
     scrollTrigger: {
-        scrub:1,
+        scrub: 1,
         markers: true,
         pin: true,
         start: "center 50%",
         end: "25% 10%",
         trigger: "#chapitre6",
-        
+
     },
 });
 chapitre6.to(".nuage", { x: "0vw", duration: 2, ease: true });
