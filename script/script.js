@@ -88,14 +88,14 @@ header.to(".cerceau", { scaleY: 3, duration: 5, rotate: "360", y: "-40vh" },
 );
 header.to("h3", { scale: 5 }, "<");
 
-gsap.from(
-    "#cloud", {
+//gsap.from(
+"#cloud", {
 
-        drawSVG: "0 50%",
-        duration: 10,
-    }
+    drawSVG: "0 50%",
+    duration: 10,
+}
 
-);
+//);
 
 
 
@@ -107,19 +107,20 @@ let chapitre01 = gsap.timeline({
         start: "center center",
         end: "center top",
         trigger: "#chapitre1",
-       
+
 
     },
 });
 
 
-gsap.to("#ampoule", {
+//gsap.to("#ampoule", {
 
-    morphSVG: "#maison",
-    duration: 16,
-    ease: "slow",
+// morphSVG: "#maison",
+// duration: 16,
+// ease: "slow",
 
-});
+//});
+
 
 gsap.to("#chapitre1", {
     backgroundPosition: "50% 100%",
@@ -184,7 +185,7 @@ let chapitre3 = gsap.timeline({
         start: "center center",
         end: "center top",
         trigger: "#chapitre3",
-     
+
 
     },
 });
@@ -201,18 +202,18 @@ chapitre3.to(".personnage", {
     duration: 16,
     scale: 2,
 });
-gsap.to('#vent', {
-    motionPath: {
-        align: "#trace",
-        path: '#trace',
-        start: 0,
-        end: 1.25,
+//gsap.to('#vent', {
+//motionPath: {
+//align: "#trace",
+//    path: '#trace',
+//start: 0,
+//   end: 1.25,
 
-    },
-    duration: 16,
-    scale: 2,
+// },
+//  duration: 16,
+// scale: 2,
 
-}, )
+//}, )
 
 let chapitre4 = gsap.timeline({
     scrollTrigger: {
@@ -238,7 +239,7 @@ let chapitre5 = gsap.timeline({
         end: "center top",
         trigger: "#chapitre5",
         scrub: 1,
-         toggleActions: "restart complete reverse reset",
+        toggleActions: "restart complete reverse reset",
     },
 });
 chapitre5.to(".roche01", { y: "-10vh", duration: 2, ease: true });
@@ -272,7 +273,7 @@ chapitre6.to(".paradis", {
     duration: 2,
     ease: true,
     opacity: 100,
-},"+=");
+}, "+=");
 chapitre6.to("paradis", {
     y: "-40vh",
     duration: 2,
