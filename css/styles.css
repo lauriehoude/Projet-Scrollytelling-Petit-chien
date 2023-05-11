@@ -183,7 +183,7 @@ main {
 #chapitre1 {
     position: relative;
     background-color: red;
-    background-image:url("../img/img_arriere_plan/chapitre_01.png");
+    background-image:url("../img/image_arriere_plam_v2/chapitre_01-min.png");
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -257,7 +257,7 @@ main {
 
 
 #chapitre2 {
-    background-image: url("../img/img_arriere_plan/chapitre_02.png");
+    background-image: url("../img/image_arriere_plam_v2/chapitre_02-min.png");
     position: relative;
     height: 100%;
     width: 100%;
@@ -307,7 +307,7 @@ main {
 }
 
 #chapitre3 {
-    background-image: url("../img/img_arriere_plan/chapitre_03.png");
+    background-image: url("../img/image_arriere_plam_v2/chapitre_03-min.png");
     position: relative;
     height: 100%;
     width: 100%;
@@ -472,7 +472,7 @@ main {
 }
 
 #chapitre5 {
-    background-image: url("../img/img_arriere_plan/chapitre_05.png");
+    background-image: url("../img/image_arriere_plam_v2/chapitre_05-min.png");
     position: relative;
     height: 100%;
     width: 100%;
@@ -507,7 +507,7 @@ main {
 }
 
 #chapitre6 {
-    background-image: url("../img/img_arriere_plan/chapitre_04.png");
+    background-image: url("../img/image_arriere_plam_v2/chapitre_04-min.png");
     position: relative;
     height: 100%;
     width: 100%;

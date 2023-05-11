@@ -1,7 +1,8 @@
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(MotionPathPlugin);
+//gsap.registerPlugin(ScrollTrigger);
+//gsap.registerPlugin(DrawSVGPlugin);
+//gsap.registerPlugin(MorphSVGPlugin);
+//gsap.registerPlugin(MotionPathPlugin);
+//
 
 
 gsap.to(".text-chapitre2", {
@@ -106,6 +107,7 @@ let chapitre01 = gsap.timeline({
         start: "center center",
         end: "center top",
         trigger: "#chapitre1",
+       
 
     },
 });
@@ -182,6 +184,7 @@ let chapitre3 = gsap.timeline({
         start: "center center",
         end: "center top",
         trigger: "#chapitre3",
+     
 
     },
 });
@@ -218,6 +221,7 @@ let chapitre4 = gsap.timeline({
         start: "75% 0%",
         end: "center top",
         trigger: "#chapitre4",
+        toggleActions: "restart complete reverse reset",
 
     },
 });
@@ -233,7 +237,8 @@ let chapitre5 = gsap.timeline({
         start: "75% 0%",
         end: "center top",
         trigger: "#chapitre5",
-        scrub: 1
+        scrub: 1,
+         toggleActions: "restart complete reverse reset",
     },
 });
 chapitre5.to(".roche01", { y: "-10vh", duration: 2, ease: true });
@@ -247,6 +252,7 @@ let chapitre6 = gsap.timeline({
         start: "center 50%",
         end: "25% 10%",
         trigger: "#chapitre6",
+        toggleActions: "restart complete reverse reset",
 
     },
 });
@@ -266,15 +272,14 @@ chapitre6.to(".paradis", {
     duration: 2,
     ease: true,
     opacity: 100,
-});
+},"+=");
 chapitre6.to("paradis", {
     y: "-40vh",
     duration: 2,
     ease: true,
     opacity: 0,
 });
-chapitre6.to(".montagne", { y: "0vh", duration: 2, ease: true, scale: 1 });
-chapitre6.to(".montagne", { y: "20vh", duration: 2, ease: true, scale: 0.8 });
+
 
 
 let myMinuteur;
