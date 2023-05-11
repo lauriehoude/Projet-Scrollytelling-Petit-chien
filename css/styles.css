@@ -31,7 +31,6 @@ html {
 body {
     font-family: "Quicksand", sans-serif;
     height: 100vh;
-    
 }
 
 img {
@@ -59,6 +58,9 @@ ul.technique-gsap li {
     margin: 5px 0;
 }
 
+
+/* page de couverture */
+
 header {
     height: 100%;
     width: 100%;
@@ -67,8 +69,8 @@ header {
     position: relative;
     object-fit: cover;
 }
-h3{
-    
+
+h3 {
     position: absolute;
     color: var(--vertpale);
     font-size: 5vh;
@@ -78,9 +80,10 @@ h3{
     left: 50%;
     color: var(--vertpale);
     font-size: 5vh;
-    filter:  hue-rotate(100%);
-    backdrop-filter:blur(5px) ;
+    filter: hue-rotate(100%);
+    backdrop-filter: blur(5px);
 }
+
 h1 {
     position: absolute;
     color: var(--vertpale);
@@ -89,7 +92,6 @@ h1 {
     position: absolute;
     top: 0%;
     left: 50%;
-   
 }
 
 .fleche {
@@ -98,12 +100,13 @@ h1 {
     right: 60px;
     bottom: 20%;
 }
-.cloud{
+
+.cloud {
     position: absolute;
     top: 15vh;
     left: 50vw;
-  
 }
+
 .lucky-courone {
     position: absolute;
     width: 40vw;
@@ -139,7 +142,6 @@ h1 {
     bottom: 0;
     width: 70vw;
     left: 20vw;
- 
     font-family: "Quicksand", sans-serif;
 }
 
@@ -180,10 +182,13 @@ main {
     height: 100%;
 }
 
+
+/*--Chapitre 1 --*/
+
 #chapitre1 {
     position: relative;
     background-color: red;
-    background-image:url("../img/image_arriere_plam_v2/chapitre_01-min.png");
+    background-image: url("../img/image_arriere_plam_v2/chapitre_01-min.png");
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -193,15 +198,15 @@ main {
     border: solid red 1px;
     background-attachment: scroll;
     background-position: 50% 0%;
-
 }
-.gazon{
+
+.gazon {
     position: absolute;
     right: 0;
     width: 100vw;
     bottom: 0;
-    
 }
+
 .nuage {
     position: absolute;
     right: 0vw;
@@ -210,8 +215,7 @@ main {
     transform: translateX(-100%);
 }
 
-
-.pensee{
+.pensee {
     position: absolute;
     left: 140px;
     bottom: 0;
@@ -230,31 +234,19 @@ main {
     font-size: 2vh;
     position: absolute;
     top: 30vh;
-    left:0vw;
+    left: 0vw;
     font-style: bold;
     color: var(--black);
     font-family: quicksand;
-   z-index: 30;
+    z-index: 30;
     width: 40vw;
     display: block;
     font-family: "Quicksand", sans-serif;
     transform: translateX(0%);
-    
 }
 
-#maison {
-    z-index: 10;
-    position: relative;
-    bottom: 0%;
-    visibility: hidden;
-}
 
-#ampoule {
-    z-index: 10;
-    position: relative;
-    bottom: 0%;
-}
-
+/*-- Chapitre 2--*/
 
 #chapitre2 {
     background-image: url("../img/image_arriere_plam_v2/chapitre_02-min.png");
@@ -269,6 +261,19 @@ main {
     background-position: center;
     object-fit: cover;
     border: solid red 1px;
+}
+
+#maison {
+    z-index: 10;
+    position: relative;
+    bottom: 0%;
+    visibility: hidden;
+}
+
+#ampoule {
+    z-index: 10;
+    position: relative;
+    bottom: 0%;
 }
 
 .chien-courone {
@@ -306,6 +311,9 @@ main {
     font-family: "Quicksand", sans-serif;
 }
 
+
+/* -- Chapitre 3 --*/
+
 #chapitre3 {
     background-image: url("../img/image_arriere_plam_v2/chapitre_03-min.png");
     position: relative;
@@ -319,35 +327,33 @@ main {
     object-fit: cover;
     border: solid red 1px;
 }
-.tracer{
+
+.tracer {
     position: absolute;
-    right:0%;
+    right: 0%;
     bottom: 30%;
     transform: translate(-50%, -50%);
     z-index: 10;
-  
 }
-.trace{
+
+.trace {
     position: relative;
     z-index: 10;
     visibility: hidden;
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-
 }
-.vent{
-    position:relative;
+
+.vent {
+    position: relative;
     z-index: 10;
-    
     object-position: 50% 50%;
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-
-   
-    
 }
+
 .personnage {
     position: absolute;
     width: 35vw;
@@ -374,6 +380,9 @@ main {
     display: block;
     font-family: "Quicksand", sans-serif;
 }
+
+
+/* -- Chapitre 4 --*/
 
 #chapitre4 {
     background-image: url("../img/img_arriere_plan/eau.png");
@@ -471,6 +480,9 @@ main {
     }
 }
 
+
+/* -- Chapitre 5 --*/
+
 #chapitre5 {
     background-image: url("../img/image_arriere_plam_v2/chapitre_05-min.png");
     position: relative;
@@ -506,6 +518,9 @@ main {
     border: solid blue 1px;
 }
 
+
+/* --Chapitre 6-- */
+
 #chapitre6 {
     background-image: url("../img/image_arriere_plam_v2/chapitre_04-min.png");
     position: relative;
@@ -517,7 +532,8 @@ main {
     box-sizing: border-box;
     display: block;
     object-fit: cover;
-    border: solid red 1px;;
+    border: solid red 1px;
+    ;
 }
 
 .paradis {

@@ -156,6 +156,7 @@ chapitre3.to(".personnage", {
     opacity: 100,
     duration: 16,
     scale: 2,
+
 });
 gsap.to(".text-chapitre3", {
     scrollTrigger: {
@@ -201,8 +202,8 @@ let chapitre4 = gsap.timeline({
     },
 });
 
-chapitre4.to(".chien-nage", { x: "10vw", duration: 7, scale: 1 });
-chapitre4.to(".chien-nage", { x: "100vw", duration: 7, scale: 2 });
+chapitre4.to(".chien-nage", { x: "10vw", duration: 7, scale: 1, repeat: -1 });
+chapitre4.to(".chien-nage", { x: "100vw", duration: 7, scale: 2, repeat: -1 });
 
 
 gsap.to(".text-chapitre4", {
@@ -253,7 +254,7 @@ gsap.to(".text-chapitre5", {
 
 let chapitre6 = gsap.timeline({
     scrollTrigger: {
-        scrub: 1,
+
         markers: true,
         pin: true,
         start: "center 50%",
@@ -263,28 +264,25 @@ let chapitre6 = gsap.timeline({
 
     },
 });
-chapitre6.to(".nuage", { x: "0vw", duration: 2, ease: true });
-chapitre6.to(".nuage", { x: "3vw", duration: 3 }, "<");
-chapitre6.to(".nuage", { x: "0vw", duration: 3 }, "<");
-chapitre6.to(".paradis", { duration: 1, ease: true, rotate: "-5" }, "<");
-chapitre6.to(".paradis", {
-    x: "10vh",
-    duration: 2,
-    ease: true,
-    rotate: "10",
-});
+chapitre6.to(".nuage", { x: "0vw", duration: 2, ease: true, repeat: -1 });
+chapitre6.to(".nuage", { x: "3vw", duration: 3, repeat: -1 }, "<");
+chapitre6.to(".nuage", { x: "0vw", duration: 3, repeat: -1 }, "<")
 chapitre6.to(".paradis", { x: "30vw", duration: 1, ease: true });
 chapitre6.to(".paradis", {
     y: "-15vh",
     duration: 2,
     ease: true,
     opacity: 100,
+    repeat: -1
+
 }, "+=");
-chapitre6.to("paradis", {
+chapitre6.to(".paradis", {
     y: "-40vh",
     duration: 2,
     ease: true,
     opacity: 0,
+    repeat: -1
+
 });
 gsap.to(".text-chapitre6", {
     scrollTrigger: {
@@ -292,6 +290,7 @@ gsap.to(".text-chapitre6", {
         markers: true,
         start: "center 85%",
         end: "25% 10%",
+        pin: true,
         toggleActions: "restart complete reverse reset",
     },
     x: "100%",
