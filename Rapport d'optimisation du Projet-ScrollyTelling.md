@@ -2,3 +2,8 @@
 
 [Page Speed Insight ](https://pagespeed.web.dev/analysis/https-lauriehoude-github-io-Projet-Scrollytelling-Petit-chien/gtuce9ed7m?form_factor=desktop) -Rapport du 12 mai 2023, 08:21:25
 
+## Problème #1
+
+### Éviter d'énorme charges utiles de réseau
+### Action concrète pour résoudre le problème
+
