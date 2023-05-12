@@ -34,3 +34,5 @@ Comme le titre le mentionne mes images n'auraient pas de width et ni height déf
 Pour résoudre ce problème, il suffit seulement d'attribuer unme largeur et une hauteur à tous mes images du dossier img.
 
 
+
+
