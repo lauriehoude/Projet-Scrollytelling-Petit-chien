@@ -1,8 +1,8 @@
-//gsap.registerPlugin(ScrollTrigger);
-//gsap.registerPlugin(DrawSVGPlugin);
-//gsap.registerPlugin(MorphSVGPlugin);
-//gsap.registerPlugin(MotionPathPlugin);
-//
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
+
 
 
 
@@ -47,22 +47,22 @@ let chapitre01 = gsap.timeline({
 
     },
 });
-//gsap.from(
-//"#cloud", {
+gsap.from(
+"#cloud", {
 
-// drawSVG: "0 50%",
-//duration: 10,
-//}
+ drawSVG: "0 50%",
+duration: 10,
+}
 
-//);
+);
 
-//gsap.to("#ampoule", {
+gsap.to("#ampoule", {
 
-// morphSVG: "#maison",
-// duration: 16,
-// ease: "slow",
+ morphSVG: "#maison",
+ duration: 16,
+ease: "slow",
 
-//});
+});
 
 
 gsap.to("#chapitre1", {
@@ -170,21 +170,21 @@ gsap.to(".text-chapitre3", {
     duration: 2,
 });
 
-//motionPath
+motionPath
 
 
-//gsap.to('#vent', {
-//motionPath: {
-//align: "#trace",
-//    path: '#trace',
-//start: 0,
-//   end: 1.25,
+gsap.to('#vent', {
+motionPath: {
+align: "#trace",
+    path: '#trace',
+start: 0,
+ end: 1.25,
 
-// },
-//  duration: 16,
-// scale: 2,
+ },
+  duration: 16,
+ scale: 2,
 
-//}, )
+}, )
 
 
 /*---Animation chapitre 4 ---*/
