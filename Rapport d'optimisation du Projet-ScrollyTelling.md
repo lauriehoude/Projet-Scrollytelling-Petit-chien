@@ -15,7 +15,7 @@ Il faudrait supprimer le dossier img_personnages qui contient des images très l
 
 ### Résultat
 
-ça n'a pas marcher.
+oui ça la marcher car il a monter de 3% mais en considérant que lorsque j'
 
 ## Problème #2
 
