@@ -194,7 +194,7 @@ let chapitre4 = gsap.timeline({
     scrollTrigger: {
         scrub: 1,
         markers: true,
-        start: "75% 0%",
+        start: "50% 0%",
         end: "center top",
         trigger: "#chapitre4",
         toggleActions: "restart complete reverse reset",
@@ -202,8 +202,8 @@ let chapitre4 = gsap.timeline({
     },
 });
 
-chapitre4.to(".chien-nage", { x: "10vw", duration: 7, scale: 1, repeat: -1 });
-chapitre4.to(".chien-nage", { x: "100vw", duration: 7, scale: 2, repeat: -1 });
+chapitre4.to(".chien-nage", { x: "10vw", duration: 7, scale: 1,  });
+chapitre4.to(".chien-nage", { x: "100vw", duration: 7, scale: 2,  });
 
 
 gsap.to(".text-chapitre4", {

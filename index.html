@@ -17,6 +17,17 @@
 
 <body class="is-scrolling">
     <header id="text-header">
+        <ul class="technique-gsap">
+            <li>anim sur la position x et y et la rotation</li>
+            <li>scrollTrigger
+                <ul>
+                    <li>trigger=#header</li>
+                    <li>pin=true afin que le chapitre reste collé</li>
+                    <li>scrub:true afin que l'anim suit le rythme et le sens du scroll</li>
+                </ul>
+                <li>morphing d'une ampoule à une étoile</li>
+            </li>
+        </ul>
         <div class="lucky-fleche">
             <img class="fleche" src="img/fleche.png" alt="fleche">
             <div class="lucky-courone">
@@ -24,20 +35,9 @@
                 <img class="lucky" src="img/img_personnage/lucky-min.png" alt="lucky-chien">
                 <h3>Lucky</h3>
                 <svg data-v-334a4042="" width="280" height="200" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="cloud"><path id="cloud" data-v-334a4042="" d="M40.7183 19.9998C45.1616 19.9998 49.4515 21.765 52.6438 24.9066C55.836 28.0482 57.6698 32.3092 57.7413 36.7518L57.7671 38.3534C59.6471 38.8421 61.3812 39.8246 62.7782 41.2216C64.8411 43.2845 66 46.0824 66 48.9998C66 51.9171 64.8411 54.715 62.7782 56.7779C60.7153 58.8408 57.9174 59.9998 55 59.9998H48C47.9898 59.9998 47.9796 59.9997 47.9694 59.9996H38.0493C38.0329 59.9998 38.0165 59.9999 38 59.9999H28C24.287 59.9999 20.726 58.5249 18.1005 55.8994C15.475 53.2739 14 49.713 14 45.9999C14 42.2869 15.475 38.726 18.1005 36.1004C19.9441 34.2569 22.2489 32.9806 24.7436 32.3839C25.456 29.5802 26.895 26.9959 28.9507 24.9066C32.0419 21.765 36.275 19.9998 40.7183 19.9998Z" stroke=" rgb(145, 193, 123)" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-
-
             </div>
         </div>
-        <ul class="technique-gsap"></ul>
-        <li>anim sur la position x et y et la rotation</li>
-        <li>scrollTrigger</li>
-        <ul>
-            <li>trigger=#header</li>
-            <li>scrub:true afin que l'anim suit le rythme et le sens du scroll</li>
-            <li>pin=true afin que le chapitre reste collé</li>
-        </ul>
-        </li>
-        </ul>
+    
         <h1>Petit chien</h1>
 
         <p class="text-header">« Projet créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency. @2023 - Conception : Laurie Houde et Kye Boustany Développement Web : Laurie Houde. »</p>
@@ -45,13 +45,16 @@
     <main>
         <section id="chapitre1">
             <ul class="technique-gsap">
-                <li>...</li>
-                <li>...</li>
+                <li>anim parallaxe sur nuage text-chapitre1 et chien</li>
                 <li>scrollTrigger
                     <ul>
-                        <li>trigger=</li>
-                        <li>...</li>
+                        <li>trigger=#chapitre1</li>
+                        <li>start: "center center",
+                            end: "bottom top",
+                            scrub: 1,
+                            markers: true</li>
                     </ul>
+                    <li>morphing d'une ampoule à une étoile</li>
                 </li>
             </ul>
             <p class="text-chapitre1" data-vitesse=".25">Lucky sort complètement du sol, s'étire et ouvre les yeux. Il regarde autour de lui l'environnement qui l'entoure. Il est effrayé… Tout lui semble différent maintenant. Il est tout seul. Alors il marche droit devant. </p>
@@ -71,12 +74,15 @@
 
         <section id="chapitre2">
             <ul class="technique-gsap">
-                <li>...</li>
-                <li>...</li>
+                <li>anim sur les x et y et la rotation</li>
                 <li>scrollTrigger
                     <ul>
-                        <li>trigger=</li>
-                        <li>...</li>
+                        <li>trigger=#chapitre2</li>
+                        <li>scrub: 1 </li>
+                        <li>markers: true</li>
+                        <li>start: "50% 0%"</li>
+                        <li>end: "center bottom"
+                </li>
                     </ul>
                 </li>
             </ul>
@@ -88,17 +94,21 @@
             <p class="text-chapitre2">Lucky continue de marcher et par accident tombe dans un trou énorme.</p>
         </section>
         <section id="chapitre3">
-            <ul class="technique-gsap"></ul>
-            <li>anim sur la position x et y et la rotation</li>
-            <li>scrollTrigger</li>
-            <li>
-                <ul>
-                    <li>trigger=#header</li>
-                    <li>scrub:true afin que l'anim suit le rythme et le sens du scroll</li>
-                    <li>pin=true afin que le chapitre reste collé</li>
-                </ul>
-            </li>
+            <ul class="technique-gsap">
+                <li>anim sur les x et y et le scale</li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=#chapitre3</li>
+                        <li>scrub: 1 </li>
+                        <li>markers: true</li>
+                        <li> start: "center center"</li>
+                        <li>end: "center top"
+                </li>
+                    </ul>
+                    <li>suivi d'un tracé d'une lune dans la grotte</li>
+                </li>
             </ul>
+      
             <img class="personnage" src="img/img_personnage/chien_vole_02-min.png" alt="chien vole">
 
             <div class="tracer">
@@ -115,56 +125,64 @@
             </p>
         </section>
         <section id="chapitre4">
-
+            <ul class="technique-gsap">
+                <li>anim sur les x</li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=#chapitre4</li>
+                        <li>scrub: 1 </li>
+                        <li>markers: true</li>
+                        <li> start: "50% 0%"</li>
+                        <li>end: "center top"
+                </li>
+                    </ul>
+                    <li>spritesheet sur les bulles</li>
+                </li>
+            </ul>
+           
             <div class="bubule">
 
                 <img class="chien-nage" src="../img/img_personnage/chien_vole_02-min.png" alt="">
-            </div>
-            <ul class="technique-gsap">
-                <li>...</li>
-                <li>...</li>
-                <li>scrollTrigger
-                    <ul>
-                        <li>trigger=</li>
-                        <li>...</li>
-                    </ul>
-                </li>
-            </ul>
+           
+      
             <p class="text-chapitre4"> Lucky adore la fraîcheur de l'eau ça lui rappel pleins de bons souvenirs avec ses frère. Il est aussi impressioné par les bulles autour de lui.</p>
-
+        </div>
         </section>
         <section id="chapitre5">
-
-            <img class="roche01" src="img/img-elements_visuels/roche_loli.png" alt="roche">
             <ul class="technique-gsap">
-
+        
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=#chapitre5</li>
+                        <li>scrub: 1 </li>
+                        <li>markers: true</li>
+                        <li> start: "75% 0%"</li>
+                        <li>end: "center top"</li>
+                        <li>toggleActions:restart complete reverse reset  </li>
+                    </ul>
+                    <li>spritesheet petit chien</li>
+                </li>
+            </ul>
+            <img class="roche01" src="img/img-elements_visuels/roche_loli.png" alt="roche">
                 <div class="petit-bonhomme">
                     <p class="text-chapitre5"> En sortant de l'eau Lucky marche vers la montagne afin de se rendre vers vers le paradis </p>
                 </div>
-                <ul class="technique-gsap">
-                    <li>...</li>
-                    <li>...</li>
-                    <li>scrollTrigger
-                        <ul>
-                            <li>trigger=</li>
-                            <li>...</li>
-                        </ul>
-                    </li>
-                </ul>
         </section>
 
         <section id="chapitre6">
             <ul class="technique-gsap">
-                <li>...</li>
-                <li>...</li>
                 <li>scrollTrigger
                     <ul>
-                        <li>trigger=</li>
-                        <li>...</li>
+                        <li>trigger=#chapitre6</li>
+                        <li>scrub: 1 </li>
+                        <li>markers: true</li>
+                        <li> start: center 50%"</li>
+                        <li>end: "25% 10%"</li>
+                        <li>toggleActions:restart complete reverse reset  </li>
                     </ul>
                 </li>
             </ul>
-
+          
             <p class="text-chapitre6 "> Lucky s'est rendu à la montagne. Il réalise qu'il s'est enfin rendu à la bonne place. Il lui suffit juste de voler pour retrouver sa famille. </p>
             <img class="montagne " src="img/img-elements_visuels/roche.png " alt="montagne ">
             <img class="nuage " src="img/img-elements_visuels/nuage.png " alt="nuage ">
