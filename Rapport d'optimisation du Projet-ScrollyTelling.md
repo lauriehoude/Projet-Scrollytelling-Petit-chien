@@ -15,7 +15,7 @@ Il faudrait supprimer le dossier img_personnages qui contient des images très l
 
 ### Résultat
 
-oui ça la marcher car il a monter de 3% mais en considérant que lorsque j'
+oui ça la marcher car il a monter de 3% mais en considérant que lorsque j'ai rajouter les li et les ul mon score a descendu de 12%
 
 ## Problème #2
 
